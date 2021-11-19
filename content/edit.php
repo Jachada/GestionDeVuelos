@@ -38,7 +38,7 @@
         <br>
 
         <label for="CantidadViajeros">Cantidad de viajeros: </label>
-        <input type="number" name="CantidadViajeros" value="" placeholder="CantidadViajeros">
+        <input type="number" name="CantidadViajeros" value="" placeholder="Cantidad de viajeros">
         <span style="color:red;"></span>
 
     </form>
