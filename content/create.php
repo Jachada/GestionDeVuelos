@@ -14,10 +14,7 @@
       <div class="row">
 
         <header class="cabecera col-12 ">
-          <div class="menu_bar d-flex justify-content-center align-content-center">
-            <a href="#" class="bt-menu"><img src="../images/logo.png" alt="" class=""><i class="fas fa-bars"></i></a>
-          </div>
-       
+          
           <nav class="menu">
             <ul class="d-flex d-inline-block justify-content-around align-items-center">
               <li>
@@ -27,7 +24,10 @@
              
               <div class="div-logo"> <li> <a href="index.php"><img src="../images/logo.png" alt="" class="logo"></a></li></div>
              
-              
+              <li class="">
+                  <a href="cerrarSesion.php"><i class=""></i><span><strong>Cerrar Sesion</strong></span></a>
+              </li>
+
               <li class="">
                 <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
               </li>
