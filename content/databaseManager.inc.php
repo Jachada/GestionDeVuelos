@@ -49,6 +49,30 @@
     }
 
     /*
+    * Registrar un nuevo usuario.
+    */
+    function register($usuario, $password, $rol) {
+        try {
+
+            $sqlInsert = "INSERT INTO usuarios (Nombre, Password, Correspondencia) VALUES (?, ?, ?)";
+            $stmt = $GLOBALS['conn']->prepare($sqlInsert);
+            $stmt->bindParam(1, $usuario);
+            $password = password_hash($password, PASSWORD_DEFAULT);
+            $stmt->bindParam(2, $password);
+            $stmt->bindParam(3, $rol);
+        
+            $result = $stmt->execute();
+        
+            } catch (PDOException $e) {
+                $e->getMessage();
+            }
+        
+            $stmt = null;
+        
+            return $result;
+    }
+
+    /*
     * Mostrar datos de un vuelo mediante su id.
     */
     function mostrarVueloPorId($id) {
@@ -200,15 +224,13 @@
         $stmt->bindParam(4, $fecha);
         $stmt->bindParam(5, $cantidadViajeros);
 
-        $stmt->execute();
-
-        $id = $GLOBALS['conn']->lastInsertId();
+        $retorno = $stmt->execute();
         
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
     $stmt = null;
-    return $id; // Retorna la ID de ese último vuelo (?)
+    return $retorno; // Funcional 100%
 }
 
     function editarVuelo() {
