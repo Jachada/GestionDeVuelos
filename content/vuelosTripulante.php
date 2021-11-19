@@ -7,6 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <table border=1>
+        <thead>
+            <tr>
+                <th>Ciudad de origen</th>
+                <th>Ciudad de destino</th>
+                <th>Operadora</th>
+                <th>Fecha</th>
+                <th>Cantidad de viajeros</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tbody>
+    </table>
 </body>
 </html>
