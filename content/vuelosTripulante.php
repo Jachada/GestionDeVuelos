@@ -65,7 +65,7 @@
             $printeaTodo = mostrarPorCompanya($companya);
 
             foreach ($printeaTodo as $vuelo) {
-            //$varid = $vuelo["id"]; ignore
+            $varid = $vuelo["id"];
             echo "<tr>";
             echo "<td>$vuelo[CiudadOrigen]</td>";
             echo "<td>$vuelo[CiudadDestino]</td>";
