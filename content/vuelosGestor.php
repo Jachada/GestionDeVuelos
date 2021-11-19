@@ -15,7 +15,7 @@
         <div class="row">
 
             <header class="cabecera col-12 ">
-                
+
 
                 <nav class="menu">
                     <ul class="d-flex d-inline-block justify-content-around align-items-center">
@@ -34,6 +34,7 @@
 
                         <li class="">
                             <a href="registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
+
                         </li>
 
                     </ul>
@@ -48,10 +49,23 @@
                         <h2 class="card-title">Vuelos</h2>
                     </header>
                     <div class="card-body">
+
+                        <?php
+                        session_start();
+
+                        if (isset($_SESSION['perfil'])) {
+                            if ($_SESSION['perfil'] != "Gestor") {
+                                header("Location: login.php");
+                            }
+                        } else {
+                            header("Location: login.php");
+                        }
+
+                        ?>
+
                         <table class="table table-bordered table-striped table-sm mb-0">
                             <thead>
                                 <tr>
-                                  
                                     <th>Origen</th>
                                     <th>Destino</th>
                                     <th>Operadora</th>
@@ -59,6 +73,7 @@
                                     <th>Numero Viajeros</th>
                                     <th>Delete</th>
                                    
+
                                 </tr>
                             </thead>
 
@@ -75,7 +90,6 @@
                             ?>
                                 <tr>
 
-                             
                                     <td class="align-middle"><?php echo $vuelo['CiudadOrigen']; ?></td>
                                     <td class="align-middle"><?php echo $vuelo['CiudadDestino']; ?></td>
                                     <td class="align-middle"><?php echo $vuelo['Operadora']; ?></td>
@@ -83,8 +97,6 @@
                                     <td class="align-middle"><?php echo $vuelo['CantidadViajeros']; ?></td>
                                     <td class='align-middle'><a   href='delete.php?id=<?php echo $vuelo["id"] ?>' class='btn btn-lg btn-danger boton'><i class='fas fa-trash-alt'></i></a></td>
 
-
-                        
                                 </tr>
                             <?php
                             endforeach;
@@ -100,6 +112,7 @@
                                     
                                     <li class="" >
                                             <button type="button"><a href="create.php" class="nuevo"><i ></i><span><strong>Nuevo vuelo</strong></span></a></button>
+
                                         </li>
                                     </ul>
                                 </nav>

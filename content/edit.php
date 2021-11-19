@@ -65,6 +65,7 @@
     $cantidadViajerosBD = 0;
     $id = 0;
 
+
     //Recojemos el id de la página
     $id = $_GET['id'];
 
@@ -196,7 +197,6 @@
     <div class="row-12 mt-5">
         <div class="col-12 mb-3">
             <div class="card">
-
                 <div class="card-body">
                     <h3 class="card-title">Editar vuelo</h3>
                     <form action=<?php echo htmlentities($_SERVER['PHP_SELF']) . "?id=$id"; ?> method="POST">
@@ -213,7 +213,14 @@
 
                         <br><br>
 
-                        <label for="operadora">Operadora: </label>
+                        <label for="operadora">Operadora: </label>=======
+254
+        <label for="CantidadViajeros">Cantidad de viajeros: </label>
+255
+        <input type="number" name="CantidadViajeros" value="<?php echo $cantidadViajerosBD; ?>" placeholder="Cantidad de viajeros">
+256
+        <span style="color:red;"></span>
+257
                         <input class="form-control" type="text" name="operadora" value="<?php echo $operadoraBD ?>" placeholder="Operadora" />
                         <span style="color:red;"></span>
 

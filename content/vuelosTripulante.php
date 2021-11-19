@@ -19,7 +19,7 @@
         <div class="row">
 
             <header class="cabecera col-12 ">
-                
+
 
                 <nav class="menu">
                     <ul class="d-flex d-inline-block justify-content-around align-items-center">
@@ -89,6 +89,7 @@
             echo "<td class='align-middle'>$vuelo[CantidadViajeros]</td>";
             echo "<td class='align-middle'><a   href='edit.php?id=$varid' class='btn btn-lg btn-success boton'><i class='fas fa-edit'></i></a></td>";
             echo "</tr>";
+
             }
             ?>
                 
