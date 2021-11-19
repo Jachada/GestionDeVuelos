@@ -13,7 +13,7 @@
 
 <body>
 
-    
+
     <div class="container-fluid">
         <div class="row">
 
@@ -65,176 +65,160 @@
 
                     <?php
 
-        //Incluímos el fichero de funciones
-        include 'databaseManager.inc.php';
+                    //Incluímos el fichero de funciones
+                    include 'databaseManager.inc.php';
 
-        //Recojemos el id de la página
-        $id = $_GET['id'];
+                    //Recojemos el id de la página
+                    $id = $_GET['id'];
 
-        //Creamos las variables para recojer los datos del formulario
-        $ciudadOrigen = "";
-        $ciudadDestino = "";
-        $operadora = "";
-        $fecha = "";
-        $cantidadViajeros = 0;
+                    //Creamos las variables para recojer los datos del formulario
+                    $ciudadOrigen = "";
+                    $ciudadDestino = "";
+                    $operadora = "";
+                    $fecha = "";
+                    $cantidadViajeros = 0;
 
-        //Creamos las variables para mostrar los errores en la edicion de vuelos
-        $errorCiudadOrigen = "";
-        $errorCiudadDestino = "";
-        $errorOperadora = "";
-        $errorFecha = "";
-        $errorCantidadViajeros = "";
+                    //Creamos las variables para mostrar los errores en la edicion de vuelos
+                    $errorCiudadOrigen = "";
+                    $errorCiudadDestino = "";
+                    $errorOperadora = "";
+                    $errorFecha = "";
+                    $errorCantidadViajeros = "";
 
-        //Si recojemos datos del formulario
-        if($_SERVER["REQUEST_METHOD"] == "POST") {
+                    //Si recojemos datos del formulario
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-            if(empty($_POST['origen'])) {
+                        if (empty($_POST['origen'])) {
 
-                //Almacenamos el error correspondiente para poder mostrarlo
-                $errorCiudadOrigen = "No se ha incluído ninguna ciudad de origen para su vuelo";
+                            //Almacenamos el error correspondiente para poder mostrarlo
+                            $errorCiudadOrigen = "No se ha incluído ninguna ciudad de origen para su vuelo";
+                        } else {
 
-            } else {
+                            //Recojemos la Ciudad de Origen
+                            $ciudadOrigen = $_POST['origen'];
 
-                //Recojemos la Ciudad de Origen
-                $ciudadOrigen = $_POST['origen'];
+                            //Si el formato del dato recogido no es correcto
+                            if (!preg_match("/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/", $ciudadOrigen)) {
 
-                //Si el formato del dato recogido no es correcto
-                if(!preg_match("/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/", $ciudadOrigen)) {
+                                //Almacenamos el error correspondiente para poder mostrarlo
+                                $errorCiudadOrigen = "El formato de la ciudad de origen no es correcto solo se pueden usar letras o espacios";
+                            }
+                        }
 
-                    //Almacenamos el error correspondiente para poder mostrarlo
-                    $errorCiudadOrigen = "El formato de la ciudad de origen no es correcto solo se pueden usar letras o espacios";
+                        if (empty($_POST['destino'])) {
 
-                }
+                            //Almacenamos el error correspondiente para poder mostrarlo
+                            $errorCiudadDestino = "No se ha incluído ninguna ciudad de destino para su vuelo";
+                        } else {
 
-            }
+                            //Recojemos la Ciudad de Destino
+                            $ciudadDestino = $_POST['destino'];
 
-            if(empty($_POST['destino'])) {
+                            //Si el formato del dato recogido no es correcto
+                            if (!preg_match("/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/", $ciudadDestino)) {
 
-                //Almacenamos el error correspondiente para poder mostrarlo
-                $errorCiudadDestino = "No se ha incluído ninguna ciudad de destino para su vuelo";
+                                //Almacenamos el error correspondiente para poder mostrarlo
+                                $errorCiudadDestino = "El formato de la ciudad de destino no es correcto solo se pueden usar letras o espacios";
+                            }
+                        }
 
-            } else {
+                        if (empty($_POST['operadora'])) {
 
-                //Recojemos la Ciudad de Destino
-                $ciudadDestino = $_POST['destino'];
+                            //Almacenamos el error correspondiente para poder mostrarlo
+                            $errorOperadora = "No se ha incluído ninguna operadora para su vuelo";
+                        } else {
 
-                //Si el formato del dato recogido no es correcto
-                if(!preg_match("/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/", $ciudadDestino)) {
+                            //Recojemos la Operadora
+                            $operadora = $_POST['operadora'];
 
-                    //Almacenamos el error correspondiente para poder mostrarlo
-                    $errorCiudadDestino = "El formato de la ciudad de destino no es correcto solo se pueden usar letras o espacios";
+                            if (!preg_match("/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/", $ciudadDestino)) {
 
-                }
+                                //Almacenamos el error correspondiente para poder mostrarlo
+                                $errorOperadora = "El formato de la operadora no es correcto solo se pueden usar letras o espacios";
+                            }
+                        }
 
-            }
+                        if (empty($_POST['estreno'])) {
 
-            if(empty($_POST['operadora'])) {
+                            //Almacenamos el error correspondiente para poder mostrarlo
+                            $errorFecha = "No se ha incluído ninguna fecha para su vuelo";
+                        } else {
 
-                //Almacenamos el error correspondiente para poder mostrarlo
-                $errorOperadora = "No se ha incluído ninguna operadora para su vuelo";
+                            //Recojemos la Fecha de salida
+                            $fecha = $_POST['estreno'];
 
-            } else {
+                            if (!preg_match("/^(([0][1-9]){1}|([1|2][0-9]){1}|([3][0|1]){1})(\/|\-)(([0][1-9]){1}|([1][0-2]){1})(\/|\-)(([1][9][4-9][0-9]){1}|([2][0][0-4][0-9]){1})$/", $fecha)) {
 
-                //Recojemos la Operadora
-                $operadora = $_POST['operadora'];
+                                //Almacenamos el error correspondiente para poder mostrarlo
+                                $errorFecha = "El formato de la fecha no es correcto solo se pueden usar numeros, barras y guiones; adicionalmente el año debe de estar contenido entre 1940 y 2049";
+                            }
+                        }
 
-                if(!preg_match("/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/", $ciudadDestino)) {
+                        if (empty($_POST['CantidadViajeros'])) {
 
-                    //Almacenamos el error correspondiente para poder mostrarlo
-                    $errorOperadora = "El formato de la operadora no es correcto solo se pueden usar letras o espacios";
+                            //Almacenamos el error correspondiente para poder mostrarlo
+                            $errorCantidadViajeros = "No se ha incluído ninguna cantidad de viajeros para su vuelo";
+                        } else {
 
-                }
+                            //Recojemos la Cantidad de Viajeros
+                            $cantidadViajeros = $_POST['CantidadViajeros'];
 
-            }
+                            if ((int)$cantidadViajeros < 0) {
 
-            if(empty($_POST['estreno'])) {
+                                //Almacenamos el error correspondiente para mostrarlo
+                                $errorCantidadViajeros = "La cantidad de viajeros debe de ser al menos 1 viajero";
+                            }
+                        }
+                    }
 
-                //Almacenamos el error correspondiente para poder mostrarlo
-                $errorFecha = "No se ha incluído ninguna fecha para su vuelo";
+                    //Llamamos a la funcion para editar
+                    editarVuelo($ciudadOrigen, $ciudadDestino, $operadora, $fecha, $cantidadViajeros, $id);
 
-            } else {
+                    ?>
 
-                //Recojemos la Fecha de salida
-                $fecha = $_POST['estreno'];
+                    <form>
 
-                if(!preg_match("/^(([0][1-9]){1}|([1|2][0-9]){1}|([3][0|1]){1})(\/|\-)(([0][1-9]){1}|([1][0-2]){1})(\/|\-)(([1][9][4-9][0-9]){1}|([2][0][0-4][0-9]){1})$/", $fecha)) {
+                        <label for="origen">Ciudad de origen: </label>
+                        <input type="text" name="origen" value="<?php ?>" placeholder="Ciudad de origen" />
+                        <span style="color:red;"></span>
 
-                    //Almacenamos el error correspondiente para poder mostrarlo
-                    $errorFecha = "El formato de la fecha no es correcto solo se pueden usar numeros, barras y guiones; adicionalmente el año debe de estar contenido entre 1940 y 2049";
+                        <br><br>
 
-                }
+                        <label for="destino">Ciudad de destino: </label>
+                        <input type="text" name="destino" value="<?php ?>" placeholder="Ciudad de destino" />
+                        <span style="color:red;"></span>
 
-            }
+                        <br><br>
 
-            if(empty($_POST['CantidadViajeros'])) {
+                        <label for="operadora">Operadora: </label>
+                        <input type="text" name="operadora" value="<?php ?>" placeholder="Operadora" />
+                        <span style="color:red;"></span>
 
-                //Almacenamos el error correspondiente para poder mostrarlo
-                $errorCantidadViajeros = "No se ha incluído ninguna cantidad de viajeros para su vuelo";
+                        <br><br>
 
-            } else {
+                        <label for="fecha">Fecha del viaje: </label>
+                        <input type="date" name="estreno" value="<?php ?>" placeholder="Fecha del viaje">
+                        <span style="color:red;"></span>
 
-                //Recojemos la Cantidad de Viajeros
-                $cantidadViajeros = $_POST['CantidadViajeros'];
+                        <br><br>
 
-                if((int)$cantidadViajeros < 0) {
+                        <label for="CantidadViajeros">Cantidad de viajeros: </label>
+                        <input type="number" name="CantidadViajeros" value="<?php ?>" placeholder="Cantidad de viajeros">
+                        <span style="color:red;"></span>
 
-                    //Almacenamos el error correspondiente para mostrarlo
-                    $errorCantidadViajeros = "La cantidad de viajeros debe de ser al menos 1 viajero";
+                        <br><br>
 
-                }
+                        <input type="submit" value="Editar" class="btn-enviar">
 
-            }
-
-        }
-
-        //Llamamos a la funcion para editar
-        editarVuelo($ciudadOrigen, $ciudadDestino, $operadora, $fecha, $cantidadViajeros, $id);
-
-    ?>
-
-    <form>
-
-        <label for="origen">Ciudad de origen: </label>
-        <input type="text" name="origen" value="<?php ?>" placeholder="Ciudad de origen"/>
-        <span style="color:red;"></span>
-
-        <br><br>
-
-        <label for="destino">Ciudad de destino: </label>
-        <input type="text" name="destino" value="<?php ?>" placeholder="Ciudad de destino"/>
-        <span style="color:red;"></span>
-
-        <br><br>
-
-        <label for="operadora">Operadora: </label>
-        <input type="text" name="operadora" value="<?php ?>" placeholder="Operadora"/>
-        <span style="color:red;"></span>
-
-        <br><br>
-
-        <label for="fecha">Fecha del viaje: </label>
-        <input type="date" name="estreno" value="<?php ?>" placeholder="Fecha del viaje">
-        <span style="color:red;"></span>
-
-        <br><br>
-
-        <label for="CantidadViajeros">Cantidad de viajeros: </label>
-        <input type="number" name="CantidadViajeros" value="<?php ?>" placeholder="Cantidad de viajeros">
-        <span style="color:red;"></span>
-
-        <br><br>
-
-        <input type="submit" value="Editar" class="btn-enviar">
-
-    </form>
+                    </form>
                 </div>
             </div>
         </div>
 
-    <div>
-        <?php
+        <div>
+            <?php
 
-            if($errorCiudadOrigen != "" && $errorCiudadDestino != "" && $errorOperadora != "" && $errorFecha != "" && $errorCantidadViajeros != "") {
+            if ($errorCiudadOrigen != "" && $errorCiudadDestino != "" && $errorOperadora != "" && $errorFecha != "" && $errorCantidadViajeros != "") {
 
                 echo $errorCiudadOrigen;
                 echo "<br>";
@@ -246,11 +230,10 @@
                 echo "<br>";
                 echo $errorCantidadViajeros;
                 echo "<br>";
-
             }
 
-        ?>
-    </div>
+            ?>
+        </div>
 
 </body>
 
