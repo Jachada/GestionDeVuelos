@@ -76,8 +76,7 @@
                         <td><?php echo $vuelo['Operadora'];?></td>
                         <td><?php echo $vuelo['Fecha'];?></td>
                         <td><?php echo $vuelo['CantidadViajeros'];?></td>
-                <td><a href="view.php?id=<?php echo $vuelo['id']?>">detalle</a></td>
-                <td><a href="edit.php?id=<?php echo $vuelo['id']?>">editar</a></td>
+              
                 <td><a href="delete.php?id=<?php echo $vuelo['id']?>">borrar</a></td>
                 </tr>
             <?php
