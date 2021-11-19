@@ -71,6 +71,20 @@
         //Recojemos el id de la página
         $id = $_GET['id'];
 
+        //Llamamos a la función para recoger los datos de la base de datos y así mostrarlo
+        $vuelo = mostrarVueloPorId($id);
+
+        foreach ($vuelo as $atributo => $valor) {
+            
+            //Creamos las variables para recojer los datos de la base de datos
+            $ciudadOrigenBD = $valor['CiudadOrigen'];
+            $ciudadDestinoBD = $valor['CiudadDestino'];
+            $operadoraBD = $valor['Operadora'];
+            $fechaBD = $valor['Fecha'];
+            $cantidadViajerosBD = $valor['CantidadViajeros'];
+            
+        }
+
         //Creamos las variables para recojer los datos del formulario
         $ciudadOrigen = "";
         $ciudadDestino = "";
@@ -195,31 +209,31 @@
     <form>
 
         <label for="origen">Ciudad de origen: </label>
-        <input type="text" name="origen" value="<?php ?>" placeholder="Ciudad de origen"/>
+        <input type="text" name="origen" value="<?php echo $ciudadOrigenBD; ?>" placeholder="Ciudad de origen"/>
         <span style="color:red;"></span>
 
         <br>
 
         <label for="destino">Ciudad de destino: </label>
-        <input type="text" name="destino" value="<?php ?>" placeholder="Ciudad de destino"/>
+        <input type="text" name="destino" value="<?php echo $ciudadDestinoBD; ?>" placeholder="Ciudad de destino"/>
         <span style="color:red;"></span>
 
         <br>
 
         <label for="operadora">Operadora: </label>
-        <input type="text" name="operadora" value="<?php ?>" placeholder="Operadora"/>
+        <input type="text" name="operadora" value="<?php echo $operadoraBD ?>" placeholder="Operadora"/>
         <span style="color:red;"></span>
 
         <br>
 
         <label for="fecha">Fecha del viaje: </label>
-        <input type="date" name="estreno" value="<?php ?>" placeholder="Fecha del viaje">
+        <input type="date" name="estreno" value="<?php echo $fechaBD; ?>" placeholder="Fecha del viaje">
         <span style="color:red;"></span>
 
         <br>
 
         <label for="CantidadViajeros">Cantidad de viajeros: </label>
-        <input type="number" name="CantidadViajeros" value="<?php ?>" placeholder="Cantidad de viajeros">
+        <input type="number" name="CantidadViajeros" value="<?php echo $cantidadViajerosBD; ?>" placeholder="Cantidad de viajeros">
         <span style="color:red;"></span>
 
         <br>
