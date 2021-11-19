@@ -17,6 +17,17 @@
   $ciudades = mostrarCiudades();
   $vuelos = mostrarVuelos();
 
+  if(!empty($_COOKIE['Ciudad']) && !empty($_COOKIE['Lugar'])) {
+    if ($_COOKIE['Lugar'] == "Destino") {
+      $vuelos = mostrarPorDestino($_COOKIE['Ciudad']);
+    } else if ($_COOKIE['Lugar'] == "Origen")  {
+      $vuelos = mostrarPorOrigen($_COOKIE['Ciudad']);
+    }
+  }
+
+  $city = "";
+  $lugar= "";
+
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $city = $_POST['ciudades'];
@@ -60,7 +71,6 @@
     <div class="row-12 mt-5">
         <div class="col-12 mb-3">
          <div class="card" >
-            
             <div class="card-body">
                 <h3 class="card-title">Filtro</h3>
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
@@ -70,15 +80,17 @@
                         <select class="form-control" id="select" name="ciudades">
                           <?php
                               foreach ($ciudades as $ciudad) {
-                                echo "<option value='$ciudad'>$ciudad</option>";
+                                ?>
+                                <option value="<?php echo $ciudad?>" <?php if ($city == $ciudad){ echo "selected";}?>><?php echo $ciudad?></option>
+                                <?php
                               }
                           ?>
                         </select>
                         <br>
                         <label for="origen">Origen</label>
-                        <input type="radio" name="lugar" id="" value="Origen">
+                        <input type="radio" name="lugar" id="" value="Origen" <?php if ($lugar == "Origen"){ echo "checked";} ?>>
                         <label for="origen">Destino</label>
-                        <input type="radio" name="lugar" id="" value="Destino">                    </div>
+                        <input type="radio" name="lugar" id="" value="Destino" <?php if ($lugar  == "Destino"){ echo "checked";} ?>>                    </div>
                         <input type="submit" value="Buscar">
                 </form>
             </div>
