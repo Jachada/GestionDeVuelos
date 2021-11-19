@@ -3,9 +3,76 @@
     global $conn;
 
     try {
-        $conn = new PDO("mysql:host=192.168.129.80;dbname=cocina", "developer", "developer");
+        $conn = new PDO("mysql:host=localhost;dbname=aeropuertos", "developer", "developer");
     } catch (PDOException $e) {
         echo "Connection fallida: " . $e->getMessage();
+    }
+
+    /*
+    * Obtenemos todos los datos del usuario solicitado.
+    */
+    function getUser($username) {
+        try {
+
+            $sqlQuery = "SELECT * FROM usuarios WHERE nombre = ?";
+            $stmt = $GLOBALS['conn']->prepare($sqlQuery);
+            $stmt->bindParam(1, $username);
+
+            $stmt->execute();
+
+            $user = $stmt->fetch();
+
+        } catch (PDOException $e) {
+            $e->getMessage();
+        }
+
+        $stmt = null;
+
+        return $user;
+    }
+
+    /*
+    * Comprobacion de usuario existente.
+    */
+    function login($usuario, $password) {
+        // Obtenemos el usuario solicitado.
+        $user = getUser($usuario);
+        $result = false;
+
+        // Comprobamos si hemos conseguido obtener un usuario con los datos dados.
+        if ($user) {
+            // Y realizamos la verificacion de la contraseña.
+            $result = password_verify($password, $user['Password']);
+        }
+
+        return $result;
+    }
+
+    /*
+    * Mostrar datos de un vuelo mediante su id.
+    */
+    function mostrarVueloPorId($id) {
+
+        try {
+
+            $sqlQuery = "SELECT * FROM vuelos WHERE id = ?";
+            $stmt = $GLOBALS['conn']->prepare($sqlQuery);
+            $stmt->bindParam(1, $id);
+        
+            $stmt->execute();
+        
+            $vuelo = $stmt->fetchAll();
+    
+        } catch (PDOException $e) {
+            $e->getMessage();
+        }
+    
+        $stmt = null;
+
+        print_r($vuelo);
+
+        return $vuelo;
+
     }
 
     /*
