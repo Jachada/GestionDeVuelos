@@ -18,7 +18,6 @@
         <div class="row">
 
             <header class="cabecera col-12 ">
-                
 
                 <nav class="menu">
                     <ul class="d-flex d-inline-block justify-content-around align-items-center">
@@ -30,10 +29,6 @@
                         <div class="div-logo">
                             <li> <a href="../index.php"><img src="../images/logo.png" alt="" class="logo"></a></li>
                         </div>
-
-                        <li class="">
-                            <a href="cerrarSesion.php"><i class=""></i><span><strong>Cerrar Sesion</strong></span></a>
-                        </li>
 
                         <li class="">
                             <a href="login.php"><i class=""></i><span><strong>Login</strong></span></a>
@@ -61,6 +56,14 @@
 
     //Incluímos el fichero de funciones
     include 'databaseManager.inc.php';
+
+    //Creamos las variables para recojer los datos de la base de datos
+    $ciudadOrigenBD = "";
+    $ciudadDestinoBD = "";
+    $operadoraBD = "";
+    $fechaBD = "";
+    $cantidadViajerosBD = 0;
+    $id = 0;
 
     //Recojemos el id de la página
     $id = $_GET['id'];
@@ -179,7 +182,14 @@
     }
 
     //Llamamos a la funcion para editar
-    editarVuelo($ciudadOrigen, $ciudadDestino, $operadora, $fecha, $cantidadViajeros, $id);
+    $actualizado = editarVuelo($ciudadOrigen, $ciudadDestino, $operadora, $fecha, $cantidadViajeros, $id);
+
+    if($actualizado) {
+
+        header("Location: vuelosTripulante.php?id=$id");
+
+    }
+
 
     ?>
 
@@ -189,7 +199,7 @@
 
                 <div class="card-body">
                     <h3 class="card-title">Editar vuelo</h3>
-                    <form>
+                    <form action=<?php echo htmlentities($_SERVER['PHP_SELF']) . "?id=$id"; ?> method="POST">
                     <div class="form-group">
                         <label for="origen">Ciudad de origen: </label>
                         <input class="form-control" type="text" name="origen" value="<?php echo $ciudadOrigenBD; ?>" placeholder="Ciudad de origen" />
