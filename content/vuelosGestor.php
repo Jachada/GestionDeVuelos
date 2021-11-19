@@ -51,13 +51,14 @@
                         <table class="table table-bordered table-striped table-sm mb-0">
                             <thead>
                                 <tr>
+                                  
                                     <th>Origen</th>
                                     <th>Destino</th>
                                     <th>Operadora</th>
                                     <th>Fecha</th>
                                     <th>Numero Viajeros</th>
-                                    <th>Edit</th>
                                     <th>Delete</th>
+                                   
                                 </tr>
                             </thead>
 
@@ -74,17 +75,16 @@
                             ?>
                                 <tr>
 
-                                    <td class="align-middle"><?php echo $vuelo['id']; ?></td>
+                             
                                     <td class="align-middle"><?php echo $vuelo['CiudadOrigen']; ?></td>
                                     <td class="align-middle"><?php echo $vuelo['CiudadDestino']; ?></td>
                                     <td class="align-middle"><?php echo $vuelo['Operadora']; ?></td>
                                     <td class="align-middle"><?php echo $vuelo['Fecha']; ?></td>
                                     <td class="align-middle"><?php echo $vuelo['CantidadViajeros']; ?></td>
-                                    <td class="align-middle"><a href="edit.php?id=<?php echo $vuelo['id'] ?>">edit</a></td>
-                                    <td class="align-middle"><a href="delete.php?id=<?php echo $vuelo['id'] ?>">delete</a></td>
+                                    <td class='align-middle'><a   href='delete.php?id=<?php echo $vuelo["id"] ?>' class='btn btn-lg btn-danger boton'><i class='fas fa-trash-alt'></i></a></td>
 
 
-                                <tr></tr>
+                        
                                 </tr>
                             <?php
                             endforeach;

@@ -42,8 +42,14 @@
 
     <?php
     include "databaseManager.inc.php";
+    if (isset($_SESSION['perfil'])) {
+      if ($_SESSION['perfil'] != "Gestor") {
+          header("Location: login.php");
+      }
+    } else {
+      header("Location: login.php");
+    }  
 
- 
         $mensajeError = "";
 
         if($_SERVER["REQUEST_METHOD"]=="POST"){
@@ -67,7 +73,7 @@
             $datos = htmlspecialchars($datos); // Traduce caracteres especiales en entidades HTML
             return $datos;
         }
-
+      
     ?>
 
 

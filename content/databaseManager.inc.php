@@ -263,7 +263,7 @@
 
     function borrarVuelo($id){
         try {
-            $sqlQuery = "DELETE FROM vuelos WHERE id = ?)";
+            $sqlQuery = "DELETE FROM vuelos WHERE id = ?";
             $stmt = $GLOBALS['conn']->prepare($sqlQuery);
     
             $stmt->bindParam(1, $id);
@@ -275,5 +275,4 @@
         $stmt = null;
         return $retorno;
     }
-    borrarVuelo(16);
 ?>
