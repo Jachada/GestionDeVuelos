@@ -21,6 +21,8 @@
 
     $city = $_POST['ciudades'];
     $lugar = $_POST['lugar'];
+    setcookie("Ciudad", $city);
+    setcookie("Lugar", $lugar);
 
     if ($lugar == "Destino") {
       $vuelos = mostrarPorDestino($city);

@@ -72,8 +72,8 @@
             // EL "GESTOR" NO ENTRA
 
             if (isset($_SESSION['perfil'])) {
-                if ($SESSION['perfil'] != "Gestor") {
-                    $companya = $SESSION['perfil'];
+                if ($_SESSION['perfil'] != "Gestor") {
+                    $companya = $_SESSION['perfil'];
 
                     $printeaTodo = mostrarPorCompanya($companya);
 
@@ -91,6 +91,8 @@
                 } else {
                     header("Location: login.php");
                 }
+            } else {
+                header("Location: login.php");
             }
             ?>
         </tbody>

@@ -87,7 +87,7 @@
 
             session_start();
             if (isset($_SESSION['perfil'])) {
-                if ($SESSION['perfil'] == "Gestor") {
+                if ($_SESSION['perfil'] == "Gestor") {
 
                     $arrayconvuelos = mostrarVuelos();
 
