@@ -98,7 +98,7 @@
                                         
                                     
                                     <li class="" >
-                                            <button type="button"><a href="create.php"><i class=""></i><span><strong>Nuevo vuelo</strong></span></a></button>
+                                            <button type="button"><a href="create.php" class="nuevo"><i ></i><span><strong>Nuevo vuelo</strong></span></a></button>
                                         </li>
                                     </ul>
                                 </nav>
