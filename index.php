@@ -12,6 +12,27 @@
     <title>Inicio</title>
 </head>
 <body>
+  <?php
+  include('content/databaseManager.inc.php');
+  $ciudades = mostrarCiudades();
+  $vuelos = mostrarVuelos();
+
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $city = $_POST['ciudades'];
+    $lugar = $_POST['lugar'];
+    setcookie("Ciudad", $city);
+    setcookie("Lugar", $lugar);
+
+    if ($lugar == "Destino") {
+      $vuelos = mostrarPorDestino($city);
+    } else if ($lugar == "Origen")  {
+      $vuelos = mostrarPorOrigen($city);
+    }
+
+  }
+
+  ?>
 <div class="container-fluid">
       <div class="row">
 
@@ -42,21 +63,23 @@
             
             <div class="card-body">
                 <h3 class="card-title">Filtro</h3>
-                <form>
+                <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
                     
                     <div class="form-group">
-                        <label for="select">Aeuropuerto</label>
+                        <label for="select">Aeropuertos</label>
                         <select class="form-control" id="select" name="ciudades">
-                            <option>1</option>
-                            
+                          <?php
+                              foreach ($ciudades as $ciudad) {
+                                echo "<option value='$ciudad'>$ciudad</option>";
+                              }
+                          ?>
                         </select>
                         <br>
                         <label for="origen">Origen</label>
-                        <input type="radio" name="lugar" id="" value="origen">
+                        <input type="radio" name="lugar" id="" value="Origen">
                         <label for="origen">Destino</label>
-                        <input type="radio" name="lugar" id="" value="destino">
-                    </div>
-                
+                        <input type="radio" name="lugar" id="" value="Destino">                    </div>
+                        <input type="submit" value="Buscar">
                 </form>
             </div>
           </div>
@@ -81,15 +104,18 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
+                <?php
+                foreach($vuelos as $vuelo) {
+                  echo '<tr>';
+                  echo '<td class="align-middle">' . $vuelo['CiudadOrigen'] . '</td>';
+                  echo '<td class="align-middle">' . $vuelo['CiudadDestino'] . '</td>';
+                  echo '<td class="align-middle">' . $vuelo['Operadora'] . '</td>';
+                  echo '<td class="align-middle">' . $vuelo['Fecha'] . '</td>';
+                  echo '<td class="align-middle">' . $vuelo['CantidadViajeros'] . '</td>';
+                  echo '<tr>';
+                }
+                ?>
 
-                    <td class="align-middle"></td>
-                    <td class="align-middle"></td>
-                    <td class="align-middle"></td>
-                    <td class="align-middle"></td>
-                    <td class="align-middle"></td>
-                    
-                </tr>
                 
                 </tbody>
             </table>
