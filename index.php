@@ -16,27 +16,19 @@
       <div class="row">
 
         <header class="cabecera col-12 ">
-          <div class="menu_bar d-flex justify-content-center align-content-center">
-            <a href="#" class="bt-menu"><img src="images/logo.png" alt="" class=""><i class="fas fa-bars"></i></a>
-          </div>
-       
+          
           <nav class="menu">
             <ul class="d-flex d-inline-block justify-content-around align-items-center">
               <li>
                 <a href="index.php"><i class=""></i><span><strong>Inicio</strong></span></a>
               </li>
               
-              <li class="">
-                <a href="./content/acercade.php"><i class=""></i><span><strong>Acerca de</strong></span></a>
-              </li>
               <div class="div-logo"> <li> <a href="index.php"><img src="images/logo.png" alt="" class="logo"></a></li></div>
              
               <li class="">
                 <a href="./content/login.php"><i class=""></i><span><strong>Login</strong></span></a>
               </li>
-              <li class="">
-                <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
-              </li>
+              
               
             </ul>
           </nav>
@@ -44,37 +36,67 @@
       </div> 
     </div>
 
-    <div class="row mt-5">
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-         <div class="card facturacion" style="background: #7FC9FF91">
+    <div class="row-12 mt-5">
+        <div class="col-12 mb-3">
+         <div class="card" >
             
             <div class="card-body">
                 <h3 class="card-title">Filtro</h3>
                 <form>
                     
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Aeuropuerto</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <label for="select">Aeuropuerto</label>
+                        <select class="form-control" id="select" name="ciudades">
                             <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            
                         </select>
+                        <br>
+                        <label for="origen">Origen</label>
+                        <input type="radio" name="lugar" id="" value="origen">
+                        <label for="origen">Destino</label>
+                        <input type="radio" name="lugar" id="" value="destino">
                     </div>
-                    <div class="form-group">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-
-                    
+                
                 </form>
             </div>
           </div>
         </div>
+    </div>
+    <div class="row-12 mt-5">
+        <div class="col-12 mb-3">
+        <section class="card ">
+            <header class="card-header">
+            
+            <h2 class="card-title">Vuelos</h2>
+            </header>
+            <div class="card-body" >
+            <table class="table table-bordered table-striped table-sm mb-0">
+                <thead>
+                <tr>
+                    <th>Origen</th>
+                    <th>Destino</th>
+                    <th>Operadora</th>
+                    <th>Fecha</th>
+                    <th>Numero Viajeros</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
 
+                    <td class="align-middle"></td>
+                    <td class="align-middle"></td>
+                    <td class="align-middle"></td>
+                    <td class="align-middle"></td>
+                    <td class="align-middle"></td>
+                    
+                </tr>
+                
+                </tbody>
+            </table>
+            </div>
+        </section>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
