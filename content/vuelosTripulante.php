@@ -19,9 +19,7 @@
         <div class="row">
 
             <header class="cabecera col-12 ">
-                <div class="menu_bar d-flex justify-content-center align-content-center">
-                    <a href="#" class="bt-menu"><img src="../images/logo.png" alt="" class=""><i class="fas fa-bars"></i></a>
-                </div>
+
 
                 <nav class="menu">
                     <ul class="d-flex d-inline-block justify-content-around align-items-center">
@@ -39,6 +37,11 @@
                         <li class="">
                             <a href="login.php"><i class=""></i><span><strong>Login</strong></span></a>
                         </li>
+
+                        <li class="">
+                            <a href="cerrarSesion.php"><i class=""></i><span><strong>Cerrar Sesion</strong></span></a>
+                        </li>
+
                         <li class="">
                             <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
                         </li>
@@ -52,51 +55,52 @@
     </div>
 
     <br><br>
+    <div class="row-12 mt-5">
+        <div class="col-12 mb-3">
+        <section class="card ">
+            <header class="card-header">
+            
+            <h2 class="card-title">Vuelos</h2>
+            </header>
+            <div class="card-body" >
+            <table class="table table-bordered table-striped table-sm mb-0">
+                <thead>
+                <tr>
+                    <th>Origen</th>
+                    <th>Destino</th>
+                    <th>Operadora</th>
+                    <th>Fecha</th>
+                    <th>Numero Viajeros</th>
+                    <th>Editar</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php      
+            $companya = "Vueling";
+            $printeaTodo = mostrarPorCompanya($companya);
 
-    <table border=1>
-        <thead>
-            <tr>
-                <th>Ciudad de origen</th>
-                <th>Ciudad de destino</th>
-                <th>Operadora</th>
-                <th>Fecha</th>
-                <th>Cantidad de viajeros</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
+            foreach ($printeaTodo as $vuelo) {
+            $varid = $vuelo["id"];
+            echo "<tr>";
+            echo "<td class='align-middle'>$vuelo[CiudadOrigen]</td>";
+            echo "<td class='align-middle'>$vuelo[CiudadDestino]</td>";
+            echo "<td class='align-middle'>$vuelo[Operadora]</td>";
+            echo "<td class='align-middle'>$vuelo[Fecha]</td>";
+            echo "<td class='align-middle'>$vuelo[CantidadViajeros]</td>";
+            echo "<td class='align-middle'><a   href='edit.php?id=$varid' class='btn btn-lg btn-success boton'><i class='fas fa-edit'></i></a></td>";
+            echo "</tr>";
 
-            session_start();
-
-            // ESTE USER (SESION) DEBE SER "X EMPRESA/TRIPULACIÓN" PARA VER SUS VUELOS!
-            // EL "GESTOR" NO ENTRA
-
-            if (isset($_SESSION['perfil'])) {
-                if ($_SESSION['perfil'] != "Gestor") {
-                    $companya = $_SESSION['perfil'];
-
-                    $printeaTodo = mostrarPorCompanya($companya);
-
-                    foreach ($printeaTodo as $vuelo) {
-                        $varid = $vuelo["id"];
-                        echo "<tr>";
-                        echo "<td>$vuelo[CiudadOrigen]</td>";
-                        echo "<td>$vuelo[CiudadDestino]</td>";
-                        echo "<td>$vuelo[Operadora]</td>";
-                        echo "<td>$vuelo[Fecha]</td>";
-                        echo "<td>$vuelo[CantidadViajeros]</td>";
-                        echo "<td><a href='edit.php?id=$varid'>Editar</td>";
-                        echo "</tr>";
-                    }
-                } else {
-                    header("Location: login.php");
-                }
-            } else {
-                header("Location: login.php");
             }
             ?>
-        </tbody>
-    </table>
+                
+                </tbody>
+            </table>
+            </div>
+        </section>
+        </div>
+    </div>
+   
+    
 </body>
 
 </html>
