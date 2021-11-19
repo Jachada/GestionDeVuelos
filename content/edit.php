@@ -15,26 +15,31 @@
 
         <label for="origen">Ciudad de origen: </label>
         <input type="text" name="origen" value="" placeholder="Ciudad de origen"/>
+        <span style="color:red;"></span>
 
         <br>
 
         <label for="destino">Ciudad de destino: </label>
         <input type="text" name="destino" value="" placeholder="Ciudad de destino"/>
+        <span style="color:red;"></span>
 
         <br>
 
         <label for="operadora">Operadora: </label>
         <input type="text" name="operadora" value="" placeholder="Operadora"/>
+        <span style="color:red;"></span>
 
         <br>
 
         <label for="fecha">Fecha del viaje: </label>
-        <input type="date" name="estreno" placeholder="Fecha del viaje">
+        <input type="date" name="estreno" value="" placeholder="Fecha del viaje">
+        <span style="color:red;"></span>
 
         <br>
 
         <label for="CantidadViajeros">Cantidad de viajeros: </label>
-        <input type="number" name="CantidadViajeros" placeholder="CantidadViajeros">
+        <input type="number" name="CantidadViajeros" value="" placeholder="CantidadViajeros">
+        <span style="color:red;"></span>
 
     </form>
 
