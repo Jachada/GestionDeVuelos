@@ -41,10 +41,39 @@
             </ul>
           </nav>
         </header>
-      </div>
-      
-      
+      </div> 
     </div>
+
+    <div class="row mt-5">
+        <div class="col-12 col-md-6 col-lg-4 mb-3">
+         <div class="card facturacion" style="background: #7FC9FF91">
+            
+            <div class="card-body">
+                <h3 class="card-title">Filtro</h3>
+                <form>
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Aeuropuerto</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    
+                </form>
+            </div>
+          </div>
+        </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
