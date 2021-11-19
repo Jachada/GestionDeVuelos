@@ -18,7 +18,7 @@
 
             <header class="cabecera col-12 ">
                 <div class="menu_bar d-flex justify-content-center align-content-center">
-                    <a href="#" class="bt-menu"><img src="images/logo.png" alt="" class=""><i class="fas fa-bars"></i></a>
+                    <a href="#" class="bt-menu"><img src="../images/logo.png" alt="" class=""><i class="fas fa-bars"></i></a>
                 </div>
 
                 <nav class="menu">
@@ -31,7 +31,7 @@
                             <a href="./content/acercade.php"><i class=""></i><span><strong>Acerca de</strong></span></a>
                         </li>
                         <div class="div-logo">
-                            <li> <a href="index.php"><img src="images/logo.png" alt="" class="logo"></a></li>
+                            <li> <a href="index.php"><img src="../images/logo.png" alt="" class="logo"></a></li>
                         </div>
 
                         <li class="">
