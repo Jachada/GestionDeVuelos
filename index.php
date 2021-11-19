@@ -12,40 +12,115 @@
     <title>Inicio</title>
 </head>
 <body>
+  <?php
+  include('content/databaseManager.inc.php');
+  $ciudades = mostrarCiudades();
+  $vuelos = mostrarVuelos();
+
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $city = $_POST['ciudades'];
+    $lugar = $_POST['lugar'];
+
+    if ($lugar == "Destino") {
+      $vuelos = mostrarPorDestino($city);
+    } else if ($lugar == "Origen")  {
+      $vuelos = mostrarPorOrigen($city);
+    }
+
+  }
+
+  ?>
 <div class="container-fluid">
       <div class="row">
 
         <header class="cabecera col-12 ">
-          <div class="menu_bar d-flex justify-content-center align-content-center">
-            <a href="#" class="bt-menu"><img src="images/logo.png" alt="" class=""><i class="fas fa-bars"></i></a>
-          </div>
-       
+          
           <nav class="menu">
             <ul class="d-flex d-inline-block justify-content-around align-items-center">
               <li>
                 <a href="index.php"><i class=""></i><span><strong>Inicio</strong></span></a>
               </li>
               
-              <li class="">
-                <a href="./content/acercade.php"><i class=""></i><span><strong>Acerca de</strong></span></a>
-              </li>
               <div class="div-logo"> <li> <a href="index.php"><img src="images/logo.png" alt="" class="logo"></a></li></div>
              
               <li class="">
                 <a href="./content/login.php"><i class=""></i><span><strong>Login</strong></span></a>
               </li>
-              <li class="">
-                <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
-              </li>
+              
               
             </ul>
           </nav>
         </header>
-      </div>
-      
-      
+      </div> 
     </div>
 
+    <div class="row-12 mt-5">
+        <div class="col-12 mb-3">
+         <div class="card" >
+            
+            <div class="card-body">
+                <h3 class="card-title">Filtro</h3>
+                <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="select">Aeropuertos</label>
+                        <select class="form-control" id="select" name="ciudades">
+                          <?php
+                              foreach ($ciudades as $ciudad) {
+                                echo "<option value='$ciudad'>$ciudad</option>";
+                              }
+                          ?>
+                        </select>
+                        <br>
+                        <label for="origen">Origen</label>
+                        <input type="radio" name="lugar" id="" value="Origen">
+                        <label for="origen">Destino</label>
+                        <input type="radio" name="lugar" id="" value="Destino">                    </div>
+                        <input type="submit" value="Buscar">
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row-12 mt-5">
+        <div class="col-12 mb-3">
+        <section class="card ">
+            <header class="card-header">
+            
+            <h2 class="card-title">Vuelos</h2>
+            </header>
+            <div class="card-body" >
+            <table class="table table-bordered table-striped table-sm mb-0">
+                <thead>
+                <tr>
+                    <th>Origen</th>
+                    <th>Destino</th>
+                    <th>Operadora</th>
+                    <th>Fecha</th>
+                    <th>Numero Viajeros</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                foreach($vuelos as $vuelo) {
+                  echo '<tr>';
+                  echo '<td class="align-middle">' . $vuelo['CiudadOrigen'] . '</td>';
+                  echo '<td class="align-middle">' . $vuelo['CiudadDestino'] . '</td>';
+                  echo '<td class="align-middle">' . $vuelo['Operadora'] . '</td>';
+                  echo '<td class="align-middle">' . $vuelo['Fecha'] . '</td>';
+                  echo '<td class="align-middle">' . $vuelo['CantidadViajeros'] . '</td>';
+                  echo '<tr>';
+                }
+                ?>
+
+                
+                </tbody>
+            </table>
+            </div>
+        </section>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
