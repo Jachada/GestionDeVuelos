@@ -213,14 +213,8 @@
 
                         <br><br>
 
-                        <label for="operadora">Operadora: </label>=======
-254
-        <label for="CantidadViajeros">Cantidad de viajeros: </label>
-255
-        <input type="number" name="CantidadViajeros" value="<?php echo $cantidadViajerosBD; ?>" placeholder="Cantidad de viajeros">
-256
-        <span style="color:red;"></span>
-257
+                        <label for="operadora">Operadora: </label>
+
                         <input class="form-control" type="text" name="operadora" value="<?php echo $operadoraBD ?>" placeholder="Operadora" />
                         <span style="color:red;"></span>
 
