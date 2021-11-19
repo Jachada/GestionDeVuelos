@@ -70,10 +70,6 @@
         $stmt = null;
 
         return $vuelo;
-
-    }
-
-    /*
     * Mostrar todos los vuelos existentes.
     */
     function mostrarVuelos() {
@@ -91,7 +87,6 @@
         $stmt = null;
     
         return $vuelos;
-
     }
 
     /*
@@ -114,9 +109,7 @@
         }
     
         $stmt = null;
-
         return $vuelos;
-
     }
 
     /*

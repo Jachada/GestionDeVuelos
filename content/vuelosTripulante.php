@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     include "databaseManager.inc.php";
     ?>
 </head>
+
 <body>
     <table border=1>
         <thead>
@@ -21,8 +23,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php 
-            
+            <?php      
             $companya = "Vueling";
             $printeaTodo = mostrarPorCompanya($companya);
 
@@ -38,9 +39,8 @@
             echo "</tr>";
             }
             ?>
-
-
         </tbody>
     </table>
 </body>
+
 </html>
