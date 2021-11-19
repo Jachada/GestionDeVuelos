@@ -8,27 +8,6 @@
     <title>VUELOS GESTOR</title>
     <link rel="stylesheet" href="../style/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">
-    <style>
-        table,
-        th,
-        td {
-            margin: auto;
-            border: 1px solid black;
-            border-collapse: collapse;
-            background-color: lightgray;
-            text-align: center;
-
-
-        }
-
-        td {
-            padding: 12px;
-        }
-
-        body {
-            color: black;
-        }
-    </style>
 </head>
 
 <body>
@@ -53,96 +32,87 @@
 
 
                         <li class="">
-                            <a href="registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
+                            <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
                         </li>
 
                     </ul>
                 </nav>
             </header>
         </div>
+        <div class="row-12 mt-5">
+            <div class="col-12 mb-3">
+                <section class="card ">
+                    <header class="card-header">
+
+                        <h2 class="card-title">Vuelos</h2>
+                    </header>
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped table-sm mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Origen</th>
+                                    <th>Destino</th>
+                                    <th>Operadora</th>
+                                    <th>Fecha</th>
+                                    <th>Numero Viajeros</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
 
 
-    </div>
-    <table border=1 fopnt-color=black>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Origen</th>
-                <th>Destino</th>
-                <th>Operadora</th>
-                <th>Fecha</th>
-                <th>Cantidad</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                            <?php
+                            include  'databaseManager.inc.php';
+                            $arrayconvuelos = mostrarVuelos();
+
+                            echo "</br>";
+                            echo "</br>";
+
+                            //RECORRIDO DE ARRAY PARA GENERAR VALORES EN LA TABLA 
+                            foreach ($arrayconvuelos as $vuelo) :
+                            ?>
+                                <tr>
+
+                                    <td class="align-middle"><?php echo $vuelo['id']; ?></td>
+                                    <td class="align-middle"><?php echo $vuelo['CiudadOrigen']; ?></td>
+                                    <td class="align-middle"><?php echo $vuelo['CiudadDestino']; ?></td>
+                                    <td class="align-middle"><?php echo $vuelo['Operadora']; ?></td>
+                                    <td class="align-middle"><?php echo $vuelo['Fecha']; ?></td>
+                                    <td class="align-middle"><?php echo $vuelo['CantidadViajeros']; ?></td>
+                                    <td class="align-middle"><a href="edit.php?id=<?php echo $vuelo['id'] ?>">edit</a></td>
+                                    <td class="align-middle"><a href="delete.php?id=<?php echo $vuelo['id'] ?>">delete</a></td>
 
 
-            </tr>
-        </thead>
-        <tbody>
+                                <tr></tr>
+                                </tr>
+                            <?php
+                            endforeach;
 
-            <?php
-            include  'databaseManager.inc.php';
-
-            // ESTE USER (SESION) DEBE SER "GESTOR" PARA VER LA TABLA ENTERA!
-
-            session_start();
-            if (isset($_SESSION['perfil'])) {
-                if ($_SESSION['perfil'] == "Gestor") {
-
-                    $arrayconvuelos = mostrarVuelos();
-
-                    echo "</br>";
-                    echo "</br>";
-
-                    //RECORRIDO DE ARRAY PARA GENERAR VALORES EN LA TABLA 
-                    foreach ($arrayconvuelos as $vuelo) :
-            ?>
-                        <tr>
-
-                            <td><?php echo $vuelo['id']; ?></td>
-                            <td><?php echo $vuelo['CiudadOrigen']; ?></td>
-                            <td><?php echo $vuelo['CiudadDestino']; ?></td>
-                            <td><?php echo $vuelo['Operadora']; ?></td>
-                            <td><?php echo $vuelo['Fecha']; ?></td>
-                            <td><?php echo $vuelo['CantidadViajeros']; ?></td>
-                            <td><a href="edit.php?id=<?php echo $vuelo['id'] ?>">edit</a></td>
-                            <td><a href="delete.php?id=<?php echo $vuelo['id'] ?>">delete</a></td>
-
-                        </tr>
-            <?php
-                    endforeach;
-                } else {
-                    header("Location: login.php");
-                }
-            }
-
-            ?>
-        </tbody>
-    </table>
-    </tbody>
-    </table>
-
-
-    <div class="row">
-
-        <header class="pie de pagina">
-            <div class="menu_bar d-flex justify-content-center align-content-center">
-                <a href="#" class="bt-menu"><img src="../images/logo.png" alt="" class=""><i class="fas fa-bars"></i></a>
+                            ?>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <header class="pie de pagina">
+                                <nav class="menu1">
+                                    <ul class="d-flex d-inline-block justify-content-around align-items-center">
+                                        
+                                    
+                                    <li class="" >
+                                            <button type="button"><a href="create.php"><i class=""></i><span><strong>Nuevo vuelo</strong></span></a></button>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </header>
+                        </div>
+                    </div>
+                </section>
             </div>
-
-            <nav class="menu">
-                <ul class="d-flex d-inline-block justify-content-around align-items-center">
+        </div>
 
 
 
-                    <li class="">
-                        <button type="button"><a href="create.php"><i class=""></i><span><strong>Nuevo vuelo</strong></span></a></button>
-                    </li>
 
-                </ul>
-            </nav>
-        </header>
-    </div>
+
 </body>
 
 </html>
