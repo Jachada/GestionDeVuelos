@@ -14,32 +14,36 @@
     <form>
 
         <label for="origen">Ciudad de origen: </label>
-        <input type="text" name="origen" value="" placeholder="Ciudad de origen"/>
+        <input type="text" name="origen" value="<?php ?>" placeholder="Ciudad de origen"/>
         <span style="color:red;"></span>
 
         <br>
 
         <label for="destino">Ciudad de destino: </label>
-        <input type="text" name="destino" value="" placeholder="Ciudad de destino"/>
+        <input type="text" name="destino" value="<?php ?>" placeholder="Ciudad de destino"/>
         <span style="color:red;"></span>
 
         <br>
 
         <label for="operadora">Operadora: </label>
-        <input type="text" name="operadora" value="" placeholder="Operadora"/>
+        <input type="text" name="operadora" value="<?php ?>" placeholder="Operadora"/>
         <span style="color:red;"></span>
 
         <br>
 
         <label for="fecha">Fecha del viaje: </label>
-        <input type="date" name="estreno" value="" placeholder="Fecha del viaje">
+        <input type="date" name="estreno" value="<?php ?>" placeholder="Fecha del viaje">
         <span style="color:red;"></span>
 
         <br>
 
         <label for="CantidadViajeros">Cantidad de viajeros: </label>
-        <input type="number" name="CantidadViajeros" value="" placeholder="Cantidad de viajeros">
+        <input type="number" name="CantidadViajeros" value="<?php ?>" placeholder="Cantidad de viajeros">
         <span style="color:red;"></span>
+
+        <br>
+
+        <input type="submit" value="Editar" class="btn-enviar">
 
     </form>
 
