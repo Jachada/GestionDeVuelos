@@ -1,0 +1,5264 @@
+.logo {
+    width: 60%;
+    
+}
+.div-logo {
+    z-index: 0;
+    text-align: center;
+}
+body {
+	background: rgb(250, 250, 211);
+	color: rgb(245, 121, 4);
+}
+.fondo {
+	width: 100%;
+	height:  600px;
+	align-self: center;
+	z-index: 100;
+	padding-left: 0px;
+}
+
+.logo-login {
+	justify-content: center;
+	
+}
+
+.titulo {
+  color: #fff;
+  margin-left: 30px;
+}
+.card1 {
+	color: #02174EFF;
+	border: 2px solid #fff;
+	background: #00B200FF;
+	margin-top: 200px;
+	width: 600px;
+	height: 320px;
+}
+
+
+
+.card1 input {
+	margin-top: 20px;
+
+	
+}
+
+.filtro {
+	width: 400px;
+	border-radius: 5px;
+}
+
+.label-movil {
+	margin-left: 10px;
+}
+
+.movil {
+	margin-left: 0px;
+}
+
+.label-pass {
+	margin-left: 10px;
+}
+
+.pass {
+	margin-left: -7px;
+	width: 250px;
+}
+
+.label-rpass {
+	margin-left: 10px;
+
+}
+
+.rpass {
+	margin-left: 10px;
+	width: 250px;
+}
+
+.card2 {
+	background: #fff;
+	color: #02174EFF; 
+}
+
+.chica {
+	margin: -389px 0px 0px 287px;
+	z-index: 200;
+	
+}
+
+hr {
+	color: #fff;
+	background-color: #fff;
+}
+
+input {
+	height: 50px;
+	width: 540px;
+}
+
+.form-check-input-lg {
+	height: 20px;
+	width: 20px;
+	margin-right: 154px;
+}
+
+.input2 {
+	height: 50px;
+	width: 255px;
+	padding: 20px;
+}
+
+.pais  {
+	width:540px;
+	height:50px;
+	border-radius: 5px;
+}
+
+.parking  {
+	width:1108px;
+	height:50px;
+	border-radius: 5px;
+	margin-left: -100px;
+}
+
+.direccion {
+	width:1108px;
+	height:50px;
+	border-radius: 5px;
+}
+
+.terminos {
+	margin-right: 45px;
+		
+}
+
+.limpieza {
+	margin-right: 15px;
+}
+
+.llegada {
+	height: 50px;
+	width: 100px;
+}
+
+.label-llegada {
+	width: 300px;
+	margin-left: -34px;
+}
+
+.procedencia {
+	height: 50px;
+	width: 200px;
+	margin-right: 20px;
+	margin-left: -250px;
+}
+
+.cerrado {
+	width: 100px;
+}
+
+.dropdown-item {
+	background: #00B200FF;
+	color: #02174EFF;
+}
+
+.dropdown-item:hover {
+	background: #00B200FF;
+	color: #fff;
+}
+.vuelo {
+	margin-left: -323px;
+	
+}
+
+.interior {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.exterior {
+	margin-right: 15px;
+	
+}
+
+.factura  {
+	width: 250px;
+	margin-left: 20px;
+}
+
+.fac {
+	color: #02174EFF;
+}
+
+.facturacion {
+	color: #02174EFF;
+}
+
+.datos {
+	color: #02174EFF;
+}
+
+.form-check {
+	padding-left: 0px;
+}
+
+.menu {
+	background: rgba(245, 60, 4, 0.603);
+	color: rgb(255, 255, 255);
+	max-width: 100%;
+	max-height: 120px;
+	padding: 0px;
+	height: 120px;
+	margin-top: 20px;
+    font-size: 25px;
+}
+
+
+
+.menu a {
+	color: rgb(11, 0, 170);
+	margin-left: 20px;
+	margin-right: 20px;
+	text-decoration: none;
+
+}
+
+.menu a:hover {
+	color: #fff;
+	
+	
+
+	text-decoration: none;
+}
+
+.menu1 {
+	background: #00B200FF;
+	color: #02174EFF;
+	max-width: 100%;
+	max-height: 150px;
+	padding: 0px;
+	height: 150px;
+	margin-top: 68px;
+    font-size: 25px;
+}
+
+/*.logo {
+
+	height: 150px;
+	width: 150px;
+	margin: 11px 0px 0px 14px;
+}*/
+.regreso {
+		margin-right: 458px;
+	    width: 130px;
+	}
+
+.cabecera {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+
+.añadir {
+	width: 300px;
+	height: 50px;
+
+}
+
+.widget-summary .summary-icon {
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 51.2px;
+    font-size: 3.2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 55px;
+    background: #02174EFF;
+	color: #fff;
+}
+
+.widget-summary .widget-summary-col.widget-summary-col-icon {
+    width: 1%;
+}
+
+.widget-summary .widget-summary-col {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}
+
+.widget-summary .widget-summary-col {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}
+
+.widget-summary .summary {
+    min-height: 65px;
+    word-break: break-all;
+    }
+
+.widget-summary .summary .title {
+    margin: 0;
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.widget-summary .summary .info {
+    font-size: 13.6px;
+    font-size: 0.85rem;
+}
+
+.widget-summary .summary .amount {
+    margin-right: .2em;
+    font-weight: 600;
+    color: #333;
+    vertical-align: middle;
+    font-size: 22.4px;
+    font-size: 1.4rem;
+}
+
+.widget-summary .summary .info span {
+    vertical-align: middle;
+}
+
+.widget-summary .summary-footer {
+    padding: 5px 0 0;
+    border-top: 1px dotted #ddd;
+    text-align: right;
+}
+
+.component-section .card.pmd-card:first-child {
+    margin-top: 0!important;
+}
+
+.fondo1 {
+    width: 100%;
+    height: 600px;
+    align-self: center;
+    z-index: 100;
+    padding-left: 0px;
+    margin-top: -48px;
+}
+
+.card3 {
+    background: #fff;
+    color: #02174EFF;
+    
+}
+
+.card3 img {
+		width: 870px;
+		height: 400px;
+	}
+
+.card3 .card-footer {
+	background: #fff;
+	border-top: transparent;
+}
+
+.card33 {
+    background: #fff;
+    color: #02174EFF;
+   
+}
+
+.card33 img {
+		width: 870px;
+		height: 400px;
+	}
+
+.card33 .card-footer {
+	background: #fff;
+	border-top: transparent;
+}
+
+
+.pmd-card .card-body {
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pmd-card .card-title {
+    margin-bottom: .5rem;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.pmd-card .card-footer {
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0 1rem 1rem 1rem;
+    margin-top: 1rem;
+}
+
+
+
+.añadir1 {
+	font-size: 100px;
+	color: #FFFFFF87;
+	margin-top: 50px;
+}
+
+.boton-login {
+	background: #02174EFF;
+	color: #00B200FF;
+	height: 40px;
+	width: 558px;
+	font-weight: 700;
+	border:2px solid #fff;
+}
+
+.boton-login:hover {
+	background: #02174EFF;
+	color: #fff;
+	height: 40px;
+	width: 558px;
+	font-weight: 700;
+}
+
+.recordar {
+	width: 20px;
+	margin-left: 20px;
+}
+
+.registrate {
+	color: #02174EFF;
+	margin-left: 320px;
+	text-decoration: none;
+}
+
+.table td {
+
+}
+
+.buscar {
+    background: #02174EFF;
+    color: #02174EFF;
+ 	width: 100%;
+}
+
+.buscar .input-group-append {
+	background-color: #02174EFF;
+}
+
+.card4 {
+	background: #fff;
+    color: #02174EFF;
+    margin-top: 60px;
+    
+}
+
+.buscar input {
+	
+	border-radius: 5px;
+}
+
+.buscar a {
+	
+	border-radius: 5px;
+}
+
+.buscar a i {
+	
+}
+
+.boton {
+	width: 50px;
+}
+
+.logo-login1 {
+	    display: none;
+	}
+
+
+header {
+	width:100%;
+}
+
+
+
+
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	color:#fff;
+	
+	display:block;
+	text-decoration:none;
+}
+
+
+.bt-menu {
+	display: none;
+}
+
+.logo2 {
+		display: none;
+	}
+
+
+
+@media screen and (max-width:1000px ) {
+	header nav {
+		width: 250px;
+		height: 300px;
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 120px;
+	    max-height: 300px;
+	    height: 240px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+}
+@media screen and (width: 360px) and (height: 640px) {
+	.filtro {
+		width: 324px;
+		border-radius: 5px;
+		height: 50px;
+	}
+
+	.logo2 {
+		display: flex;
+		margin-left: 80px;
+		margin-bottom: 20px;
+		
+		width: 100px;
+		height: 100px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 50px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.ib img {
+		height: 50px;
+		width: 50px;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	.menu1 {
+		background: #00B200FF;
+		color: #02174EFF;
+		max-width: 100%;
+		max-height: 150px;
+		padding: 0px;
+		height: 150px;
+		margin-top: 68px;
+	    font-size: 25px;
+	}
+
+	input {
+		height: 25px;
+		width: 320px;
+	}
+	.input2 {
+		height: 50px;
+		width: 255px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:320px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}
+
+	.fondo {
+		
+	
+		
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 250px;
+		font-weight: 700;
+	}
+
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 250px;
+	    font-weight: 700;
+	}
+
+	.direccion {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}	
+
+	
+	
+
+	.card1 {
+		color: #02174EFF;
+		border: 2px solid #fff;
+		background: #00B200FF;
+		margin-top: 100px;
+		width: 300px;
+		height: 300px;
+	}
+
+	.recordar {
+		margin-left: -10px;
+	}
+
+	.registrate {
+		margin-left: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	}
+
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+	
+	.inicio img {
+		width: 360px;
+		height: 640px;
+	}
+
+	.card3 img {
+		width: 300px;
+		height: 150px;
+	}
+
+	.card33 img {
+		width: 300px;
+		height: 150px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -322px;
+	}
+
+	.regreso {
+		margin-right: 320px;
+	    width: 130px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    width: 317px;
+	    margin-left: -93px;
+	    margin-bottom: 10px;
+	}
+
+	.llegada {
+	    height: 50px;
+	    width: 316px;
+	    margin-left: -93px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: -163px;
+	}
+
+	.interior {
+	    margin-right: 15px;
+	    margin-left: 15px;
+	}
+
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+}
+
+@media screen and (width: 640px) and (height: 360px) {
+	.filtro {
+		width: 604px;
+		border-radius: 5px;
+		height: 50px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 208px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.direccion {
+	    width: 570px;
+	    height: 50px;
+	    border-radius: 5px;
+	}
+
+	.fac {
+	    color: #02174E;
+	    height: 828px;
+	    width: 600px;
+	    background: #fff;
+	    
+	}
+
+	.ib img {
+		height: 50px;
+		width: 50px;
+
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 570px;
+	}
+	.input2 {
+		height: 50px;
+		width: 570px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:570px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 570px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}
+
+	.fondo {
+		width: 610px;
+		height: 360px;
+		align-self: center;
+	}
+
+	.card input {
+		margin-top: 20px;
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: -20px;
+	    width: 331px;
+	    height: 300px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+	
+	
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	    
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	   
+	}
+	
+	.inicio img {
+		width: 640px;
+		height: 360px;
+	}
+
+	.card3 img {
+		width: 600px;
+		height: 300px;
+	}
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+
+	.card33 img {
+		width: 600px;
+		height: 300px;
+	}
+
+	.label-llegada {
+    width: 300px;
+    margin-right: -183px;
+    margin-left: 735px;
+	}
+
+	.regreso {
+    margin-left: 800px;
+    width: 130px;
+    margin-right: 19px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: 867px;
+	    margin-right: -704px;
+	}
+
+	.comunicar {
+		margin-left: -152px;
+	}
+
+	
+
+	.procedencia {
+	    height: 50px;
+	    
+	    margin-left: -491px;
+	    
+	}
+
+	.form-check-input-lg {
+		height: 20px;
+		width:20px;
+		
+	}
+
+	.llegada {
+	    height: 50px;
+	    
+	    margin-left: 61px;
+	}
+
+
+	.interior {
+	    margin-right: 20px;
+	    margin-left: 0px;
+	}
+
+	.terminos {
+		margin-right: 20px;
+			
+	}
+
+	.limpieza {
+		margin-right: 15px;
+	}
+
+	.logo-login1 {
+		display: flex;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+@media screen and (width: 411px) and (height: 771px) {
+
+	.menu {
+		margin-top: -40px;
+		font-size: 10px;
+		height: 30px;
+		width: 640px;
+		z-index: 100;
+	}
+	.logo {
+		height: 50px;
+		width: 50px;
+		display: none;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 320px;
+	}
+	.input2 {
+		height: 50px;
+		width: 255px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:320px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+}
+
+@media screen and (width: 320px) and (height: 568px) {
+	.menu {
+		margin-top: -40px;
+		font-size: 10px;
+		height: 30px;
+		width: 640px;
+		z-index: 100;
+	}
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 320px;
+		margin-left: 14px;
+	}
+	.input2 {
+		height: 50px;
+		width: 255px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:320px;
+		height:50px;
+		border-radius: 5px;
+		margin-left: 14px;
+	}
+
+	.parking {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -23px;
+	}
+
+	.fondo {
+		width: 330px;
+		height:  330px;
+		align-self: center;
+	
+		
+	}
+
+	.boton-login {
+		background: #00B200FF;
+		color: #02174EFF;
+		height: 40px;
+		width: 150px;
+		font-weight: 700;
+	}
+
+	
+	.card {
+		color: #fff;
+		height: 250px;
+		width: 190px;
+		background: #02174EFF;
+		
+	}
+
+	.card input {
+		margin-top: 20px;
+		
+	}
+
+
+}
+
+@media screen and (width: 568px) and (height: 320px) {
+	.menu {
+		margin-top: -40px;
+		font-size: 10px;
+		height: 30px;
+		width: 568px;
+		z-index: 100;
+	}
+	.logo {
+		height: 50px;
+		width: 50px;
+		
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 320px;
+		
+	}
+	.input2 {
+		height: 50px;
+		width: 255px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:320px;
+		height:50px;
+		border-radius: 5px;
+
+	}
+
+	.parking {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -23px;
+	}
+
+	.fondo {
+		width: 640px;
+		height:  260px;
+		align-self: center;
+	}
+
+	.boton-login {
+		background: #00B200FF;
+		color: #02174EFF;
+		height: 40px;
+		width: 250px;
+		font-weight: 700;
+	}
+
+	
+	.card {
+		color: #fff;
+		height: 250px;
+		width: 300px;
+		background: #02174EFF;
+		
+	}
+
+	.card input {
+		margin-top: 20px;
+	}
+
+	
+}
+
+/*@media screen and (max-width: 1720px) {
+	.filtro {
+	width: 300px;
+	border-radius: 5px;
+	}
+
+@media screen and (max-width: 1320px) {
+	.filtro {
+	width: 200px;
+	border-radius: 5px;
+	}*/
+
+/* @media screen and (max-width: 920px) {
+	.filtro {
+	width: 150px;
+	border-radius: 5px;
+	}
+} */
+
+@media screen and (width: 375px) and (height: 667px) {
+	.filtro {
+	    width: 315px;
+	    border-radius: 5px;
+	    height: 50px;
+	}
+	.logo2 {
+		display: flex;
+		margin-left: 80px;
+		margin-bottom: 20px;
+		
+		width: 100px;
+		height: 100px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 50px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.ib img {
+		height: 50px;
+		width: 50px;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	.menu1 {
+		background: #00B200FF;
+		color: #02174EFF;
+		max-width: 100%;
+		max-height: 150px;
+		padding: 0px;
+		height: 150px;
+		margin-top: 68px;
+	    font-size: 25px;
+	}
+
+	input {
+		height: 25px;
+		width: 320px;
+	}
+	.input2 {
+		height: 50px;
+		width: 255px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:320px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}
+
+
+	.direccion {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}	
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: 100px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	}
+
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+	
+	.inicio img {
+		width: 360px;
+		height: 640px;
+	}
+
+	.card3 img {
+		width: 300px;
+		height: 150px;
+	}
+
+	.card33 img {
+		width: 300px;
+		height: 150px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -322px;
+	}
+
+	.regreso {
+		margin-right: 320px;
+	    width: 130px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    width: 317px;
+	    margin-left: -93px;
+	    margin-bottom: 10px;
+	}
+
+	.llegada {
+	    height: 50px;
+	    width: 316px;
+	    margin-left: -93px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: -163px;
+	}
+
+	.interior {
+	    margin-right: 15px;
+	    margin-left: 15px;
+	}
+
+	
+}
+
+@media screen and (width: 667px) and (height: 375px) {
+	.filtro {
+	    width: 630px;
+	    border-radius: 5px;
+	    height: 50px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 208px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.direccion {
+	    width: 570px;
+	    height: 50px;
+	    border-radius: 5px;
+	}
+
+	.fac {
+	    color: #02174E;
+	    height: 808px;
+	    width: 638px;
+	    background: #fff;
+	    
+	}
+
+	.ib img {
+		height: 70px;
+		width: 70px;
+
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 570px;
+	}
+	.input2 {
+		height: 50px;
+		width: 570px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:570px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 570px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}
+
+	.fondo {
+		width: 610px;
+		height: 360px;
+		align-self: center;
+	}
+
+	
+
+	
+	
+
+	.card input {
+		margin-top: 20px;
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: -20px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	    
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	   
+	}
+	
+	.inicio img {
+		width: 640px;
+		height: 360px;
+	}
+
+	.card3 img {
+		width: 600px;
+		height: 300px;
+	}
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+
+	.card33 img {
+		width: 600px;
+		height: 300px;
+	}
+
+	.label-llegada {
+    width: 300px;
+    margin-right: -183px;
+    margin-left: 735px;
+	}
+
+	.regreso {
+    margin-left: 800px;
+    width: 130px;
+    margin-right: 19px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: 867px;
+	    margin-right: -704px;
+	}
+
+	.comunicar {
+		margin-left: -152px;
+	}
+
+	
+
+	.procedencia {
+	    height: 50px;
+	    
+	    margin-left: -491px;
+	    
+	}
+
+	.form-check-input-lg {
+		height: 20px;
+		width: 20px;
+		
+	}
+
+	.llegada {
+	    height: 50px;
+	    
+	    margin-left: 61px;
+	}
+
+	
+
+	.interior {
+	    margin-right: 20px;
+	    margin-left: 0px;
+	}
+
+	.terminos {
+		margin-right: 20px;
+			
+	}
+
+	.limpieza {
+		margin-right: 15px;
+	}
+
+	.logo-login1 {
+		display: flex;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (width: 768px) and (height: 1024px) {
+	.filtro {
+	width: 162px;
+	border-radius: 5px;
+	height: 50px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 208px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.direccion {
+	    width: 700px;
+	    height: 50px;
+	    border-radius: 5px;
+	}
+
+	.fac {
+	    color: #02174E;
+	    height: 663px;
+	    width: 731px;
+	    background: #fff;
+	    
+	}
+
+	.ib img {
+		height: 50px;
+		width: 50px;
+
+	}
+
+	.datos {
+		color: #02174EFF;
+		width: 700px;
+		margin-left: -173px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 350px;
+	}
+	.input2 {
+		height: 50px;
+		width: 570px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:350px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 733px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -197px;
+	}
+
+	.fondo {
+	    width: 739px;
+	    height: 963px;
+	    align-self: center;
+	}
+
+
+	.card input {
+		margin-top: 20px;
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: 100px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	    
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	   
+	}
+	
+	.inicio img {
+		width: 640px;
+		height: 360px;
+	}
+
+	.card3 img {
+		width: 310px;
+		height: 170px;
+	}
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+
+	.card33 img {
+		width: 310px;
+		height: 170px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -320px;
+	}
+
+	.regreso {
+	    margin: 0px 0px 0px -338px;
+	    margin-bottom: 0px;
+	    width: 130px;
+	}
+
+	.form-inline .form-control {
+	    display: inline-block;
+	    width: 120px;
+	    vertical-align: middle;
+	}
+
+	.form-inline .form-control .llegada {
+	    display: inline-block;
+	    width: 70px;
+	    vertical-align: middle;
+	}
+
+	.vuelo {
+	    margin-left: -705px;
+	    width: 200px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    margin-left: -378px;
+	}
+
+	.form-check-input-lg {
+		height: 20px;
+		width: 20px;
+		
+	}
+
+	.llegada {
+	    height: 50px;
+	}
+
+	.label-movil {
+		margin-left: 10px;
+	}
+
+	.movil {
+		margin-left: 0px;
+	}
+
+	.label-pass {
+		margin-left: 10px;
+	}
+
+	.pass {
+		margin-left: 10px;
+		width: 150px;
+	}
+
+	.label-rpass {
+		margin-left: 10px;
+
+	}
+
+	.rpass {
+		margin-left: 10px;
+		width: 150px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: -28px;
+	}
+
+	.interior {
+	    margin-right: 20px;
+	    margin-left: 0px;
+	}
+
+	.terminos {
+		margin-right: 20px;
+			
+	}
+
+	.limpieza {
+		margin-right: 15px;
+	}
+
+	
+}
+
+@media screen and (width: 1024px) and (height: 768px) {
+	.filtro {
+		width: 225px;
+		border-radius: 5px;
+		height: 50px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 208px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.direccion {
+	    width: 700px;
+	    height: 50px;
+	    border-radius: 5px;
+	}
+
+	.fac {
+	    color: #02174E;
+	    height: 635px;
+	    width: 993px;
+	    background: #fff;
+	}
+
+	.ib img {
+		height: 100px;
+		width: 100px;
+
+	}
+
+	.datos {
+		color: #02174EFF;
+		width: 830px;
+		margin-left: -173px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 350px;
+	}
+	.input2 {
+		height: 50px;
+		width: 570px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:350px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 733px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -138px;
+	}
+
+	.fondo {
+	    width: 739px;
+	    height: 963px;
+	    align-self: center;
+	}
+
+	.card input {
+		margin-top: 20px;
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: 100px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	    
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	   
+	}
+	
+	.inicio img {
+		width: 640px;
+		height: 360px;
+	}
+
+	.card3 img {
+		width: 467px;
+		height: 250px;
+	}
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+
+	.card33 img {
+		width: 467px;
+		height: 250px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -320px;
+	}
+
+	.regreso {
+	    margin: 0px 0px 0px -346px;
+	    margin-bottom: 0px;
+	    width: 130px;
+	}
+
+	.form-inline .form-control {
+	    display: inline-block;
+	    width: 120px;
+	    vertical-align: middle;
+	}
+
+	.form-inline .form-control .llegada {
+	    display: inline-block;
+	    width: 70px;
+	    vertical-align: middle;
+	}
+
+	.vuelo {
+	    margin-left: -710px;
+	    width: 200px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    margin-left: -374px;
+	}
+
+	.form-check-input-lg {
+		height: 20px;
+		width: 20px;
+		
+	}
+
+	.llegada {
+	    height: 50px;
+	}
+
+	.label-movil {
+		margin-left: 10px;
+	}
+
+	.movil {
+		margin-left: 0px;
+	}
+
+	.label-pass {
+		margin-left: 10px;
+	}
+
+	.pass {
+		margin-left: 10px;
+		width: 150px;
+	}
+
+	.label-rpass {
+		margin-left: 10px;
+
+	}
+
+	.rpass {
+		margin-left: 10px;
+		width: 150px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: -28px;
+	}
+
+	.interior {
+	    margin-right: 20px;
+	    margin-left: 0px;
+	}
+
+	.terminos {
+		margin-right: 20px;
+			
+	}
+
+	.limpieza {
+		margin-right: 15px;
+	}
+
+	
+}
+
+@media screen and (width: 360px) and (height: 740px) {
+	
+	.logo2 {
+		display: flex;
+		margin-left: 80px;
+		margin-bottom: 20px;
+		
+		width: 100px;
+		height: 100px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 50px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.ib img {
+		height: 50px;
+		width: 50px;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	.menu1 {
+		background: #00B200FF;
+		color: #02174EFF;
+		max-width: 100%;
+		max-height: 150px;
+		padding: 0px;
+		height: 150px;
+		margin-top: 68px;
+	    font-size: 25px;
+	}
+
+	input {
+		height: 25px;
+		width: 320px;
+	}
+	.input2 {
+		height: 50px;
+		width: 255px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:320px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}
+
+	.fondo {
+		
+	
+		
+	}
+
+	
+	.direccion {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}	
+
+	
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: -20px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	}
+
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+	
+	.inicio img {
+		width: 360px;
+		height: 640px;
+	}
+
+	.card3 img {
+		width: 300px;
+		height: 150px;
+	}
+
+	.card33 img {
+		width: 300px;
+		height: 150px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -322px;
+	}
+
+	.regreso {
+		margin-right: 320px;
+	    width: 130px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    width: 317px;
+	    margin-left: -93px;
+	    margin-bottom: 10px;
+	}
+
+	.llegada {
+	    height: 50px;
+	    width: 316px;
+	    margin-left: -93px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: -163px;
+	}
+
+	.interior {
+	    margin-right: 15px;
+	    margin-left: 15px;
+	}
+
+	
+}
+
+@media screen and (width: 740px) and (height: 360px) {
+	
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 208px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.direccion {
+	    width: 570px;
+	    height: 50px;
+	    border-radius: 5px;
+	}
+
+	.fac {
+	    color: #02174E;
+	    height: 735px;
+	    width: 710px;
+	    background: #fff;
+	    
+	}
+
+	.ib img {
+		height: 100px;
+		width: 100px;
+
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 570px;
+	}
+	.input2 {
+		height: 50px;
+		width: 570px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:570px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 570px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}
+
+	.fondo {
+		width: 610px;
+		height: 360px;
+		align-self: center;
+	}
+
+
+	.card input {
+		margin-top: 20px;
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: -20px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	    
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	   
+	}
+	
+	.inicio img {
+		width: 640px;
+		height: 360px;
+	}
+
+	.card3 img {
+		width: 600px;
+		height: 300px;
+	}
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+
+	.card33 img {
+		width: 600px;
+		height: 300px;
+	}
+
+	.label-llegada {
+    width: 300px;
+    margin-right: -183px;
+    margin-left: 735px;
+	}
+
+	.regreso {
+    margin-left: 800px;
+    width: 130px;
+    margin-right: 19px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: 867px;
+	    margin-right: -704px;
+	}
+
+	.comunicar {
+		margin-left: -152px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    
+	    margin-left: -491px;
+	    
+	}
+
+	.form-check-input-lg {
+		height: 20px;
+		width: 20px;
+		
+	}
+
+	.llegada {
+	    height: 50px;
+	    
+	    margin-left: 61px;
+	}
+
+	
+
+	.interior {
+	    margin-right: 0px;
+	    margin-left: 0px;
+	}
+
+	.terminos {
+		margin-right: 0px;
+			
+	}
+
+	.limpieza {
+		margin-right: 15px;
+	}
+
+	
+}
+
+@media screen and (width: 414px) and (height: 736px) {
+	.filtro {
+	    width: 315px;
+	    border-radius: 5px;
+	    height: 50px;
+	}
+	.logo2 {
+		display: flex;
+		margin-left: 80px;
+		margin-bottom: 20px;
+		
+		width: 100px;
+		height: 100px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 50px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.ib img {
+		height: 50px;
+		width: 50px;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	.menu1 {
+		background: #00B200FF;
+		color: #02174EFF;
+		max-width: 100%;
+		max-height: 150px;
+		padding: 0px;
+		height: 150px;
+		margin-top: 68px;
+	    font-size: 25px;
+	}
+
+	input {
+		height: 25px;
+		width: 320px;
+	}
+	.input2 {
+		height: 50px;
+		width: 255px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:324px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}
+
+	.direccion {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}	
+
+	
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: 100px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	}
+
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+	
+	.inicio img {
+		width: 360px;
+		height: 640px;
+	}
+
+	.card3 img {
+		width: 338px;
+		height: 192px;
+	}
+
+	.card33 img {
+		width: 338px;
+		height: 192px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -322px;
+	}
+
+	.regreso {
+		margin-right: 320px;
+	    width: 130px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    width: 317px;
+	    margin-left: -93px;
+	    margin-bottom: 10px;
+	}
+
+	.llegada {
+	    height: 50px;
+	    width: 316px;
+	    margin-left: -93px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: -163px;
+	}
+
+	.interior {
+	    margin-right: 15px;
+	    margin-left: 15px;
+	}
+
+	
+}
+
+@media screen and (width: 736px) and (height: 414px) {
+	.filtro {
+	    width: 700px;
+	    border-radius: 5px;
+	    height: 50px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 208px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.direccion {
+	    width: 570px;
+	    height: 50px;
+	    border-radius: 5px;
+	}
+
+	.fac {
+	    color: #02174E;
+	    height: 732px;
+	    width: 705px;
+	    background: #fff;
+	}
+
+	.ib img {
+		height: 100px;
+		width: 100px;
+
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 570px;
+	}
+	.input2 {
+		height: 50px;
+		width: 570px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:570px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 570px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}
+
+	.fondo {
+		width: 610px;
+		height: 360px;
+		align-self: center;
+	}
+
+	
+
+	.card input {
+		margin-top: 20px;
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: 0px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	    
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	   
+	}
+	
+	.inicio img {
+		width: 640px;
+		height: 360px;
+	}
+
+	.card3 img {
+		width: 660px;
+		height: 300px;
+	}
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+
+	.card33 img {
+		width: 660px;
+		height: 300px;
+	}
+
+	.label-llegada {
+    width: 300px;
+    margin-right: -183px;
+    margin-left: 735px;
+	}
+
+	.regreso {
+    margin-left: 800px;
+    width: 130px;
+    margin-right: 19px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: 867px;
+	    margin-right: -704px;
+	}
+
+	.comunicar {
+		margin-left: -152px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    
+	    margin-left: -491px;
+	    
+	}
+
+	.form-check-input-lg {
+		height: 20px;
+		width: 20px;
+		
+	}
+
+	.llegada {
+	    height: 50px;
+	    
+	    margin-left: 61px;
+	}
+
+	
+
+	.interior {
+	    margin-right: 20px;
+	    margin-left: 0px;
+	}
+
+	.terminos {
+		margin-right: 20px;
+			
+	}
+
+	.limpieza {
+		margin-right: 15px;
+	}
+
+	.logo-login1 {
+		display: flex;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (width: 375px) and (height: 812px) {
+	.filtro {
+	    width: 317px;
+	    border-radius: 5px;
+	    height: 50px;
+
+	}
+
+	.logo2 {
+		display: flex;
+		margin-left: 80px;
+		margin-bottom: 20px;
+		
+		width: 100px;
+		height: 100px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 50px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.ib img {
+		height: 50px;
+		width: 50px;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	.menu1 {
+		background: #00B200FF;
+		color: #02174EFF;
+		max-width: 100%;
+		max-height: 150px;
+		padding: 0px;
+		height: 150px;
+		margin-top: 68px;
+	    font-size: 25px;
+	}
+
+	input {
+		height: 25px;
+		width: 320px;
+	}
+	.input2 {
+		height: 50px;
+		width: 255px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:320px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}
+
+	.fondo {
+		
+	
+		
+	}
+
+	.direccion {
+	    width: 320px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -10px;
+	}	
+
+	
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: -20px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	}
+
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+	
+	.inicio img {
+		width: 360px;
+		height: 640px;
+	}
+
+	.card3 img {
+		width: 338px;
+		height: 192px;
+	}
+
+	.card33 img {
+		width: 338px;
+		height: 192px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -322px;
+	}
+
+	.regreso {
+		margin-right: 320px;
+	    width: 130px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    width: 317px;
+	    margin-left: -93px;
+	    margin-bottom: 10px;
+	}
+
+	.llegada {
+	    height: 50px;
+	    width: 316px;
+	    margin-left: -93px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: -163px;
+	}
+
+	.interior {
+	    margin-right: 15px;
+	    margin-left: 15px;
+	}
+
+	
+}
+
+@media screen and (width: 812px) and (height: 375px) {
+	.filtro {
+	    width: 173px;
+	    border-radius: 5px;
+	    height: 50px;
+	    
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 208px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.direccion {
+	    width: 570px;
+	    height: 50px;
+	    border-radius: 5px;
+	}
+
+	.fac {
+	    color: #02174E;
+	    height: 639px;
+	    width: 783px;
+	    background: #fff;
+	   
+	}
+
+	.ib img {
+		height: 50px;
+		width: 50px;
+
+	}
+
+	.datos {
+		color: #02174EFF;
+		z-index: 100;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 370px;
+	}
+	.input2 {
+		height: 50px;
+		width: 370px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:370px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 774px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -205px;
+	}
+
+	.fondo {
+		width: 610px;
+		height: 360px;
+		align-self: center;
+	}
+
+	.vuelo {
+	    margin-left: 220px;
+	    width: 200px;
+	}
+
+	.card1 .procedencia {
+
+    height: 50px;
+    margin-left: -491px;
+    width: 250px;
+
+	}
+
+	.card input {
+		margin-top: 20px;
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 40px;
+		width: 290px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 40px;
+	    width: 290px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: -20px;
+	    width: 331px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 52px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	    
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	   
+	}
+	
+	.inicio img {
+		width: 640px;
+		height: 360px;
+	}
+
+	.card3 img {
+		width: 660px;
+		height: 300px;
+	}
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+
+	.card33 img {
+		width: 660px;
+		height: 300px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -275px;
+	}
+
+	.vuelo {
+	    margin-left: 40px;
+	    width: 200px;
+	    margin-right: 821px;
+	}
+
+
+
+	.regreso {
+	    margin-right: 0px;
+	    width: 130px;
+	    margin-left: 45px;
+	}
+
+	.procedencia {
+		    height: 50px;
+		    margin-left: -542px;
+		}
+
+	.form-check-input-lg {
+		height: 20px;
+		width: 20px;
+		
+	}
+
+	.llegada {
+	    height: 50px;
+	
+	}
+
+	.comunicar {
+	    margin-left: -402px;
+	}
+	.cerrado {
+	    width: 100px;
+	    margin-left: -200px;
+	}
+
+	.interior {
+	    margin-right: 20px;
+	    margin-left: 0px;
+	}
+
+	.terminos {
+		margin-right: 20px;
+			
+	}
+
+	.limpieza {
+		margin-right: 15px;
+	}
+
+	
+}
+
+@media screen and (width: 1024px) and (height: 1366px) {
+	.filtro {
+		width: 225px;
+		border-radius: 5px;
+		height: 50px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 208px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.direccion {
+	    width: 700px;
+	    height: 50px;
+	    border-radius: 5px;
+	}
+
+	.fac {
+	    color: #02174E;
+	    height: 635px;
+	    width: 994px;
+	    background: #fff;
+	    
+	}
+
+	.ib img {
+		height: 100px;
+		width: 100px;
+
+	}
+
+	.datos {
+		color: #02174EFF;
+		width: 700px;
+		margin-left: -173px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 350px;
+	}
+	.input2 {
+		height: 50px;
+		width: 570px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:350px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 733px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -132px;
+	}
+
+	.fondo {
+	    width: 739px;
+	    height: 963px;
+	    align-self: center;
+	}
+
+	
+	.card input {
+		margin-top: 20px;
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 50px;
+		width: 711px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 50px;
+	    width: 711px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: 100px;
+	    width: 756px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 469px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    z-index: 200;
+	    margin: -592px 0px 0px 12px;
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	    
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	   
+	}
+	
+	.inicio img {
+		width: 640px;
+		height: 360px;
+	}
+
+	.card3 img {
+		width: 430px;
+		height: 250px;
+	}
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+
+	.card33 img {
+		width: 430px;
+		height: 250px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -320px;
+	}
+
+	.regreso {
+	    margin: 0px 0px 0px -320px;
+	    margin-bottom: 0px;
+	    width: 130px;
+	}
+
+	.form-inline .form-control {
+	    display: inline-block;
+	    width: 120px;
+	    vertical-align: middle;
+	}
+
+	.form-inline .form-control .llegada {
+	    display: inline-block;
+	    width: 70px;
+	    vertical-align: middle;
+	}
+
+	.vuelo {
+	    margin-left: -708px;
+	    width: 200px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    margin-left: -378px;
+	}
+
+	.form-check-input-lg {
+		height: 20px;
+		width: 20px;
+		
+	}
+
+	.llegada {
+	    height: 50px;
+	}
+
+	.label-movil {
+		margin-left: 10px;
+	}
+
+	.movil {
+		margin-left: 0px;
+	}
+
+	.label-pass {
+		margin-left: 10px;
+	}
+
+	.pass {
+		margin-left: 10px;
+		width: 150px;
+	}
+
+	.label-rpass {
+		margin-left: 10px;
+
+	}
+
+	.rpass {
+		margin-left: 10px;
+		width: 150px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: -28px;
+	}
+
+	.interior {
+	    margin-right: 20px;
+	    margin-left: 0px;
+	}
+
+	.terminos {
+		margin-right: 20px;
+			
+	}
+
+	.limpieza {
+		margin-right: 15px;
+	}
+
+	
+}
+
+@media screen and (width: 1366px) and (height: 1024px) {
+	.filtro {
+		width: 311px;
+		border-radius: 5px;
+		height: 50px;
+	}
+
+	header nav {
+		width: 360px;
+		
+		left:-100%;
+		position: fixed;
+		text-decoration: none;
+	}
+
+	.menu_bar a i {
+    	margin-left: 10px;
+	}
+
+	.menu {
+	    background: #00B200D0;
+	    color: #02174EFF;
+	    border:1px solid #fff;
+	    max-width: 100%;
+	    margin-top: 10px;
+	    margin-left: 208px;
+	    max-height: 150px;
+	    height: 150px;
+	    text-decoration: none;
+	    z-index: 1000;
+	    border-radius: 5px;
+	    width: 227px;
+	    font-size: 25px;
+	}
+
+	header nav ul {
+		flex-direction: column;
+		width: 200px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		
+		text-decoration: none;
+	}
+
+	.direccion {
+	    width: 700px;
+	    height: 50px;
+	    border-radius: 5px;
+	}
+
+	.fac {
+	    color: #02174E;
+	    height: 638px;
+	    width: 1335px;
+	    background: #fff;
+	    
+	}
+
+	.ib img {
+		height: 100px;
+		width: 100px;
+
+	}
+
+	.datos {
+		color: #02174EFF;
+		width: 830px;
+		margin-left: -173px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#00B200FF;
+	}
+
+	.menu_bar a i {
+		margin-left: 20px;
+		align-self: center;
+	}
+
+	.menu_bar .bt-menu {
+		display: inline-flex;
+		padding:20px;
+
+		background:#00B200FF;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+	
+	.logo {
+		height: 50px;
+		width: 50px;
+		visibility: hidden;
+	}
+
+	.menu a {
+	    color: #02174EFF;
+	    margin-left: 10px;
+	    text-decoration: none;
+	}
+
+	input {
+		height: 25px;
+		width: 350px;
+	}
+	.input2 {
+		height: 50px;
+		width: 570px;
+		padding: 20px;
+	}
+
+	.pais  {
+		width:350px;
+		height:50px;
+		border-radius: 5px;
+	}
+
+	.parking {
+	    width: 733px;
+	    height: 50px;
+	    border-radius: 5px;
+	    margin-left: -46px;
+	}
+
+	.fondo {
+	    width: 739px;
+	    height: 963px;
+	    align-self: center;
+	}
+
+	
+	.card input {
+		margin-top: 20px;
+	}
+
+	.boton-login {
+		background: #02174EFF;
+		color: #00B200FF;
+		height: 50px;
+		width: 975px;
+		font-weight: 700;
+	}
+	
+	.boton-login:hover {
+	    background: #02174EFF;
+	    color: #fff;
+	    height: 50px;
+	    width: 975px;
+	    font-weight: 700;
+	}
+	
+	.logo-login {
+	    margin-bottom: 20px;
+	}
+	
+	.card1 {
+	    color: #02174EFF;
+	    border: 2px solid #fff;
+	    background: #00B200FF;
+	    margin-top: 100px;
+	    width: 1021px;
+	    height: 320px;
+	}
+
+	.card1 .recordar {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .recordar1 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.card1 .registrate {
+		margin-left: 738px;
+		margin-bottom: 20px;
+		}
+
+	.card input {
+		margin-top: 0px;
+		margin-bottom: 20px;
+		
+	}
+
+	.buscar {
+	    background: #fff;
+	    color: #02174EFF;
+	    
+	    width: 300px;
+
+	}
+
+	.card2 {
+		background: #fff;
+		color: #02174EFF;
+		
+	}
+
+	.card3 {
+	    background: #fff;
+	    color: #02174EFF;
+	    margin-bottom: 20px;
+	    
+	}
+
+	.card33 {
+	    background: #fff;
+	    color: #02174EFF;
+	   
+	}
+	
+	.inicio img {
+		width: 640px;
+		height: 360px;
+	}
+
+	.card3 img {
+		width: 613px;
+		height: 400px;
+	}
+	.card3 .card-footer {
+		background: #fff;
+	}
+
+	.card33 .card-footer {
+		background: #fff;
+	}
+
+	.card33 img {
+		width: 613px;
+		height: 400px;
+	}
+
+	.label-llegada {
+	    width: 300px;
+	    margin-left: -320px;
+	}
+
+	.regreso {
+	    margin-left: -251px;
+	    margin-bottom: 0px;
+	    width: 130px;
+	}
+
+	.form-inline .form-control {
+	    display: inline-block;
+	    width: 120px;
+	    vertical-align: middle;
+	}
+
+	.form-inline .form-control .llegada {
+	    display: inline-block;
+	    width: 70px;
+	    vertical-align: middle;
+	}
+
+
+
+	.vuelo {
+	    margin-left: -564px;
+	    width: 200px;
+	}
+
+	.procedencia {
+	    height: 50px;
+	    margin-left: -443px;
+	}
+
+	.form-check-input-lg {
+		height: 20px;
+		width: 20px;
+		
+	}
+
+	.llegada {
+	    height: 50px;
+	}
+
+	.label-movil {
+		margin-left: 10px;
+	}
+
+	.movil {
+		margin-left: 0px;
+	}
+
+	.label-pass {
+		margin-left: 10px;
+	}
+
+	.pass {
+		margin-left: 10px;
+		width: 150px;
+	}
+
+	.label-rpass {
+		margin-left: 10px;
+
+	}
+
+	.rpass {
+		margin-left: 10px;
+		width: 150px;
+	}
+
+	.cerrado {
+	    width: 100px;
+	    margin-left: -86px;
+	}
+
+	.comunicar {
+		margin-left: -47px;
+	}
+
+	.interior {
+	    margin-right: 20px;
+	    margin-left: 0px;
+	}
+
+	.terminos {
+		margin-right: 20px;
+			
+	}
+
+	.limpieza {
+		margin-right: 15px;
+	}
+
+	
+}

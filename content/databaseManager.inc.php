@@ -68,9 +68,7 @@
         }
     
         $stmt = null;
-
         return $vuelo;
-
     }
 
     /*
@@ -91,7 +89,6 @@
         $stmt = null;
     
         return $vuelos;
-
     }
 
     /*
@@ -114,9 +111,7 @@
         }
     
         $stmt = null;
-
         return $vuelos;
-
     }
 
     /*
