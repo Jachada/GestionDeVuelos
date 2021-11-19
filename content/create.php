@@ -59,7 +59,7 @@
                 
             }
             else{
-               $mensajeError =  "<p>Conexión fallida. Prueba de nuevo.</p>"; 
+               $mensajeError =  "<p>* Conexión fallida. Prueba de nuevo.</p>"; 
             }
         }
         function filtrado($datos){
@@ -71,9 +71,15 @@
     ?>
 
 
-        <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST" class="form-register">
+<div class="row-12 mt-5">
+        <div class="col-12 mb-3">
+         <div class="card" >
+            
+            <div class="card-body">
+                <h3 class="card-title">Nuevo:</h3>
+                <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST" class="form-register">
 
-            <h2 class="form-titulo">Introducir vuelo:</h2>
+            <h2 class="form-titulo">Introducir datos:</h2>
             <div class="contenedor-inputs">
                 
                 <input type="text" name="origen" placeholder="Origen" class="input-100" required>
@@ -83,9 +89,15 @@
                 <input type="text" name="cantidad" placeholder="Cantidad de pasajeros" class="input-48"required >
                 
                 <input type="submit" value="Registrar" class="btn-enviar">
-                <span style="color:red">*<?php echo $mensajeError?></span>
+                <span style="color:red"><?php echo $mensajeError?></span>
             <div id="errores"></div>
             </div>
         </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+        
 </body>
 </html>
