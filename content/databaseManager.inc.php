@@ -260,4 +260,20 @@
         //Devolvemos el resultado de la consulta.
         return $actualizado;      
     }
+
+    function borrarVuelo($id){
+        try {
+            $sqlQuery = "DELETE FROM vuelos WHERE id = ?)";
+            $stmt = $GLOBALS['conn']->prepare($sqlQuery);
+    
+            $stmt->bindParam(1, $id);
+    
+            $retorno = $stmt->execute();
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+        }
+        $stmt = null;
+        return $retorno;
+    }
+    borrarVuelo(16);
 ?>
