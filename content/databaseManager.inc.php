@@ -69,8 +69,6 @@
     
         $stmt = null;
 
-        print_r($vuelo);
-
         return $vuelo;
 
     }
