@@ -24,7 +24,7 @@
         <div class="div-logo"> <li> <a href="../index.php"><img src="../images/logo.png" alt="" class="logo"></a></li></div>
         
         <li class="">
-            <a href="registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
+            <a href="login.php"><i class=""></i><span><strong>Login</strong></span></a>
         </li>
         
         
@@ -36,12 +36,10 @@
 
     session_start();
 
-    // Comprobamos si ya hay una sesion activa y redireccionamos en caso afirmativo.
+    // Si el usuario no es Gestor volverá a la pantalla de login, en caso de estar logueado será redireccionado según su Correspondencia.
     if (isset($_SESSION['perfil'])) {
-        if ($_SESSION['perfil'] == "Gestor") {
-            header("Location: vuelosGestor.php");
-        } else if ($_SESSION['perfil'] != "Gestor") {
-            header("Location: vuelosTripulante.php");
+        if ($_SESSION['perfil'] != "Gestor") {
+            header("Location: login.php");
         }
     }
 
@@ -49,19 +47,13 @@
 
     $error = "";
 
-    // Comprobamos las credenciales y realizamos la redireccion oportuna.
+    // Comprobamos si el usuario se ha registrado correctamente y mostramos un mensaje.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (login($_POST['username'], $_POST['password'])) {
-            $_SESSION['perfil'] = getUser($_POST['username'])['Correspondencia'];
 
-            // Redireccion dependiendo del perfil del usuario logueado.
-            if ($_SESSION['perfil'] == "Gestor") {
-                header("Location: vuelosGestor.php");
-            } else if ($_SESSION['perfil'] != "Gestor") {
-                header("Location: vuelosTripulante.php");
-            }
+        if (register($_POST['username'], $_POST['password'], $_POST['rol'])) {
+            $error = "<p style='color:green'>Usuario registrado correctamente.</p>";
         } else {
-            $error = "<p style='color:red'>Contraseña incorrecta.</p>";
+            $error = "<p style='color:red'>El usuario ya existe.</p>";
         }
         
     }
@@ -72,17 +64,17 @@
      <div class="card" >
         
         <div class="card-body">
-            <h3 class="card-title">INTRODUZCA LOS DATOS DE LOGIN</h3>
+            <h3 class="card-title">INTRODUZCA LOS DATOS DE REGISTRO</h3>
             <form action=<?php echo htmlentities($_SERVER['PHP_SELF']); ?> method="POST">
                 
-                <div class="form-group">
-                <label>Nombre de usuario</label><br>
-                <input type="text" name="username" placeholder="Usuario" required/><br>
-                <label>Contraseña</label><br>
-                <input type="password" name="password" placeholder="Contraseña" required/><br><br>
-                <input type="submit" value="Iniciar Sesión">
-                <p><?php echo $error?></p>
-                </div>
+            <label>Nombre de usuario</label><br>
+        <input type="text" name="username" placeholder="Usuario" required/><br>
+        <label>Contraseña</label><br>
+        <input type="password" name="password" placeholder="Contraseña" required/><br>
+        <label>Rol (Gestor o nombre de la compañia)</label><br>
+        <input type="text" name="rol" placeholder="Gestor | Iberia | Vueling" required/><br><br>
+        <input type="submit" value="Registrar">
+        <p><?php echo $error;?>
             
             </form>
         </div>
@@ -96,6 +88,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/menu.js" ></script>
-        
 </body>
 </html>
