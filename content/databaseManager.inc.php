@@ -3,7 +3,7 @@
     global $conn;
 
     try {
-        $conn = new PDO("mysql:host=192.168.129.80;dbname=cocina", "developer", "developer");
+        $conn = new PDO("mysql:host=192.168.129.80;dbname=aeropuertos", "developer", "developer");
     } catch (PDOException $e) {
         echo "Connection fallida: " . $e->getMessage();
     }
