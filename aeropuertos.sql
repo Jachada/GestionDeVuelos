@@ -6,6 +6,16 @@ CREATE TABLE `usuarios` (
   `Correspondencia` text COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+INSERT INTO `usuarios` (`Nombre`, `Password`, `Correspondencia`) VALUES
+('Alejandro', '$2y$10$hFLeJ1lpFbKfpTMBCAuTzev6oiKogRD14jQNCgMOBLqbmyuEE8Sz6', 'Gestor'),
+('Antonio', '$2y$10$vulSPTQXtM6vTjuDw0ayEOrIbSMup.ubH0WK6UkwuSv7.ovJqTRD2', 'Gestor'),
+('Pablo', '$2y$10$zir9yIjcNwGt0EkPUauoYOu3WmoVzaUTrDgrRpVcAy5MZJHOW2CEG', 'Vueling'),
+('Carmen', '$2y$10$dHWTVXQE/UzcSih0XVEQLOqmYsGr4CVdi3F55c/CwynTrtfews7n.', 'Ryanair'),
+('Marina', '$2y$10$JPOaLraUkvItDtWc319jGOAWpYhHFQ8NmXFTfE1FEF0GCzhVvnrZm', 'Iberia'),
+('Samuel', '$2y$10$22AFxEjvn1Q/CExjNV5AHu4ovAUw2gwm1sQTsO.QxhbmeVwknDSCO', 'Ryanair'),
+('David', '$2y$10$OUJwmSyvM3txzGezZWsyx.DNVvODYpP70/JbVbljUWpY4YXDayrVy', 'Iberia'),
+('Manuel', '$2y$10$ersUXrSR3mu96KM7fZPRY.aN4yenVoA0iH9BruGRc2cgsUPp4hW6W', 'Iberia');
+
 CREATE TABLE `vuelos` (
   `id` int(11) NOT NULL,
   `CiudadOrigen` text COLLATE utf8_spanish_ci NOT NULL,
