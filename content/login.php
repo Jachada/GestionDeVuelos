@@ -24,10 +24,6 @@
         <div class="div-logo"> <li> <a href="../index.php"><img src="../images/logo.png" alt="" class="logo"></a></li></div>
         
         <li class="">
-            <a href="cerrarSesion.php"><i class=""></i><span><strong>Cerrar Sesion</strong></span></a>
-        </li>
-
-        <li class="">
             <a href="registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
         </li>
         
