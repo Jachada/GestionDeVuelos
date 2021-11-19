@@ -24,14 +24,10 @@
                 <a href="../index.php"><i class=""></i><span><strong>Inicio</strong></span></a>
               </li>
               
-              <li class="">
-                <a href="acercade.php"><i class=""></i><span><strong>Acerca de</strong></span></a>
-              </li>
+             
               <div class="div-logo"> <li> <a href="index.php"><img src="../images/logo.png" alt="" class="logo"></a></li></div>
              
-              <li class="">
-                <a href="login.php"><i class=""></i><span><strong>Login</strong></span></a>
-              </li>
+              
               <li class="">
                 <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
               </li>

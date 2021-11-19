@@ -7,6 +7,23 @@
     <title>VUELOS GESTOR</title>
     <link rel="stylesheet" href="../style/bootstrap.min.css"> 
     <link rel="stylesheet" href="../style/style.css">
+    <style>
+    table, th, td {
+        margin:auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: lightgray;
+    text-align: center;
+    
+    
+    }
+    td {
+    padding: 12px;
+    }
+    body{
+        color: black;
+    }
+    </style>
 </head>
 <body>
 <div class="container-fluid">
@@ -23,14 +40,10 @@
                 <a href="../index.php"><i class=""></i><span><strong>Inicio</strong></span></a>
               </li>
               
-              <li class="">
-                <a href="acercade.php"><i class=""></i><span><strong>Acerca de</strong></span></a>
-              </li>
+          
               <div class="div-logo"> <li> <a href="index.php"><img src="../images/logo.png" alt="" class="logo"></a></li></div>
              
-              <li class="">
-                <a href="login.php"><i class=""></i><span><strong>Login</strong></span></a>
-              </li>
+             
               <li class="">
                 <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
               </li>
@@ -42,7 +55,7 @@
       
       
     </div>
-    <table border=1>
+    <table border=1 fopnt-color= black>
         <thead>
             <tr>
                 <th>Id</th>
@@ -51,9 +64,10 @@
                 <th>Operadora</th>
                 <th>Fecha</th>
                 <th>Cantidad</th>
-                <th>View</th>
                 <th>Edit</th>
-                <th>Borrar</th>
+                <th>Delete</th>
+               
+              
            </tr>
         </thead>
         <tbody>
@@ -76,8 +90,9 @@
                         <td><?php echo $vuelo['Operadora'];?></td>
                         <td><?php echo $vuelo['Fecha'];?></td>
                         <td><?php echo $vuelo['CantidadViajeros'];?></td>
-              
-                <td><a href="delete.php?id=<?php echo $vuelo['id']?>">borrar</a></td>
+                        <td><a href="edit.php?id=<?php echo $vuelo['id']?>">edit</a></td>
+                        <td><a href="delete.php?id=<?php echo $vuelo['id']?>">delete</a></td>
+                  
                 </tr>
             <?php
             endforeach;
@@ -87,5 +102,27 @@
     </table>
         </tbody>
     </table>
+
+
+    <div class="row">
+
+        <header class="pie de pagina">
+          <div class="menu_bar d-flex justify-content-center align-content-center">
+            <a href="#" class="bt-menu"><img src="../images/logo.png" alt="" class=""><i class="fas fa-bars"></i></a>
+          </div>
+       
+          <nav class="menu">
+            <ul class="d-flex d-inline-block justify-content-around align-items-center">
+              
+              
+             
+              <li class="">
+              <button type="button"><a href="create.php"><i class=""></i><span><strong>Nuevo vuelo</strong></span></a></button>
+              </li>
+             
+            </ul>
+          </nav>
+        </header>
+      </div>
 </body>
 </html>
