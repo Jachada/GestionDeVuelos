@@ -1,25 +1,38 @@
 <?php
-    function MostrarTodo() {
+
+    global $conn;
+
+    try {
+        $conn = new PDO("mysql:host=192.168.129.80;dbname=aeropuertos", "developer", "developer");
+    } catch (PDOException $e) {
+        echo "Connection fallida: " . $e->getMessage();
+    }
+
+    function mostrarTodo() {
 
     }
 
-    function MostrarPorOrigen() {
+    function mostrarPorOrigen() {
 
     }
 
-    function MostrarPorDestino() {
+    function mostrarPorDestino() {
 
     }
 
-    function MostrarPorCompanya() {
+    function mostrarPorCompanya() {
 
     }
 
-    function CrearVuelo() {
+    function mostrarCiudades() {
 
     }
 
-    function EditarVuelo() {
+    function crearVuelo() {
+
+    }
+
+    function editarVuelo() {
 
     }
 ?>
