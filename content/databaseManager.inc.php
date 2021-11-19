@@ -233,7 +233,31 @@
     return $retorno; // Funcional 100%
 }
 
-    function editarVuelo() {
+    function editarVuelo($ciudadOrigen, $ciudadDestino, $operadora, $fecha, $cantidadViajeros, $id) {
 
+        //Creamos la variable a devolver inicializándola a false.
+        $actualizado = false;
+
+        //Para conectarse a la base de datos $GLOBALS['conn']
+        $sql = $GLOBALS['conn'] -> prepare("UPDATE vuelos SET `CiudadOrigen`=:ciudadOrigen, `CiudadDestino`=:ciudadDestino, `Operadora`=:operadora, `Fecha`=:fecha, `CantidadViajeros`=:cantidadViajeros WHERE `id`=:id");
+
+        //Pasamos los párametros a la consulta.
+        $sql -> bindParam(":ciudadOrigen", $ciudadOrigen);
+        $sql -> bindParam(":ciudadDestino", $ciudadDestino);
+        $sql -> bindParam(":operadora", $operadora);
+        $sql -> bindParam(":fecha", $fecha);
+        $sql -> bindParam(":cantidadViajeros", $cantidadViajeros);
+        $sql -> bindParam(":id", $id);
+
+        //Ejecutamos la consulta.
+        $sql -> execute();
+
+        //Si la consulta se a realizado ponemos la variable a devolver a true.
+        if (($sql -> rowCount()) > 0) {
+            $actualizado = true;
+        }
+
+        //Devolvemos el resultado de la consulta.
+        return $actualizado;      
     }
 ?>
