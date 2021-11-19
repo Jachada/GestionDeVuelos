@@ -47,6 +47,19 @@
                         <h2 class="card-title">Vuelos</h2>
                     </header>
                     <div class="card-body">
+                        <?php
+                        session_start();
+
+                        if (isset($_SESSION['perfil'])) {
+                            if ($_SESSION['perfil'] != "Gestor") {
+                                header("Location: login.php");
+                            }
+                        } else {
+                            header("Location: login.php");
+                        }
+
+                        ?>
+
                         <table class="table table-bordered table-striped table-sm mb-0">
                             <thead>
                                 <tr>
@@ -95,9 +108,9 @@
                             <header class="pie de pagina">
                                 <nav class="menu1">
                                     <ul class="d-flex d-inline-block justify-content-around align-items-center">
-                                        
-                                    
-                                    <li class="" >
+
+
+                                        <li class="">
                                             <button type="button"><a href="create.php"><i class=""></i><span><strong>Nuevo vuelo</strong></span></a></button>
                                         </li>
                                     </ul>
