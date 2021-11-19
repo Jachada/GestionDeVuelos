@@ -205,15 +205,13 @@
         $stmt->bindParam(4, $fecha);
         $stmt->bindParam(5, $cantidadViajeros);
 
-        $stmt->execute();
-
-        $id = $GLOBALS['conn']->lastInsertId();
+        $retorno = $stmt->execute();
         
     } catch (PDOException $e) {
         echo $e->getMessage();
     }
     $stmt = null;
-    return $id; // Retorna la ID de ese último vuelo (?)
+    return $retorno; // Funcional 100%
 }
 
     function editarVuelo() {
