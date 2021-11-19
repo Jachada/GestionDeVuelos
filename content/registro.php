@@ -25,9 +25,7 @@
         
         <li class="">
             <a href="login.php"><i class=""></i><span><strong>Login</strong></span></a>
-        </li>
-        
-        
+        </li>        
         </ul>
     </nav>
     </header>

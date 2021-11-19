@@ -26,12 +26,10 @@
               
              
               <div class="div-logo"> <li> <a href="index.php"><img src="../images/logo.png" alt="" class="logo"></a></li></div>
-             
               
               <li class="">
                 <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
               </li>
-              
             </ul>
           </nav>
         </header>

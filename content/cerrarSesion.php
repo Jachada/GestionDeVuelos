@@ -7,7 +7,4 @@ if (isset($_SESSION['perfil'])) {
     session_destroy();
     header("Location: ../index.php");
 }
-
-
-
 ?>

@@ -63,7 +63,6 @@
         } else {
             $error = "<p style='color:red'>Contraseña incorrecta.</p>";
         }
-        
     }
 
     ?>

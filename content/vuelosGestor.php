@@ -115,7 +115,6 @@
                     header("Location: login.php");
                 }
             }
-
             ?>
         </tbody>
     </table>

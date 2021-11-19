@@ -275,5 +275,4 @@
         $stmt = null;
         return $retorno;
     }
-    borrarVuelo(16);
 ?>

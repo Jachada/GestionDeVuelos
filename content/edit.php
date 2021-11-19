@@ -260,9 +260,7 @@
                 echo "<br>";
                 echo $errorCantidadViajeros;
                 echo "<br>";
-
             }
-
         ?>
     </div>
 
