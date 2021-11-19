@@ -1,20 +1,23 @@
 # GestionDeVuelos
 * Gestión de Vuelos es un programa el cuál consta con un Login y Registro de usuarios(sólo accesible a usuarios con un rol específico), el cuál mostrará todos los vuelos almacenados en una base de datos. Dependiendo de su rol, se mostrará los datos de la tabla de tal forma que podán ser editados o no. Nuestro programa tambíen contiene un filter, el cuál te permite ver los vuelos por compañia o destino.
 ## FUNCIONABILIDAD DEL PROGRAMA:
-* 1. Sistema de login.
-     * Función login.php y registro.php
-      * Se almacenará:
+* 1.Sistema de login.
+    * Función login.php y registro.php
+     * Se almacenará:
        * Nombre de usuario.
        * Contraseña.
        * Correspondencia. (En este campo se almacena si es un gestor del aeropuerto o la compañía de la que es tripulante el usuario).   
 * 2.Almacenaje de los datos en una base de datos denominada “aeropuertos”.
-     * Se almacenará:
+    * Se almacenará:
       * Ciudad de origen.
       * Ciudad de destino.
       * Operadora.
       * Fecha.
       * Cantidad de viajeros.
-
+* 3.Los Usuarios no logeados podrán elegir un aeropuerto de salida o llegada y ver todos los vuelos relacionados. La próxima vez que visiten la web se les mostrará esos vuelos directamente.
+* 4.Los Usuarios que tengan como rol "Gestor" podrán crear y consultar todos los vuelos
+* 5.Los Usuarios que sean de una Tripulacion podan consultar y editar el listado de vuelos de SU compañía solamente.
+ 
 ## Organización:
 ### FRONT:
 * index.php:
