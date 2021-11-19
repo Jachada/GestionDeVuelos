@@ -68,8 +68,10 @@
         }
     
         $stmt = null;
-
         return $vuelo;
+    }
+
+    /*
     * Mostrar todos los vuelos existentes.
     */
     function mostrarVuelos() {
