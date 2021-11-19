@@ -53,7 +53,7 @@
 
 
                         <li class="">
-                            <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
+                            <a href="registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
                         </li>
 
                     </ul>
