@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="../style/style.css">
     <?php
     include "databaseManager.inc.php";
+    session_start();
+    if (isset($_SESSION['perfil'])) {
+        if ($_SESSION['perfil'] == "Gestor") {
+            header("Location: login.php");
+        }
+    }
     ?>
 </head>
 
@@ -27,24 +33,14 @@
                             <a href="../index.php"><i class=""></i><span><strong>Inicio</strong></span></a>
                         </li>
 
-                        <li class="">
-                            <a href="acercade.php"><i class=""></i><span><strong>Acerca de</strong></span></a>
-                        </li>
                         <div class="div-logo">
-                            <li> <a href="index.php"><img src="../images/logo.png" alt="" class="logo"></a></li>
+                            <li> <a href="../index.php"><img src="../images/logo.png" alt="" class="logo"></a></li>
                         </div>
-
-                        <li class="">
-                            <a href="login.php"><i class=""></i><span><strong>Login</strong></span></a>
-                        </li>
 
                         <li class="">
                             <a href="cerrarSesion.php"><i class=""></i><span><strong>Cerrar Sesion</strong></span></a>
                         </li>
 
-                        <li class="">
-                            <a href="./content/registro.php"><i class=""></i><span><strong>Registro</strong></span></a>
-                        </li>
 
                     </ul>
                 </nav>
@@ -76,7 +72,7 @@
                 </thead>
                 <tbody>
                 <?php      
-            $companya = "Vueling";
+            $companya = $_SESSION['perfil'];
             $printeaTodo = mostrarPorCompanya($companya);
 
             foreach ($printeaTodo as $vuelo) {

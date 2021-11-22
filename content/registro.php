@@ -25,13 +25,7 @@
         
         <li class="">
             <a href="cerrarSesion.php"><i class=""></i><span><strong>Cerrar Sesion</strong></span></a>
-        </li>
-
-        <li class="">
-
-            <a href="login.php"><i class=""></i><span><strong>Login</strong></span></a>
-        </li>
-        
+        </li>       
         
         </ul>
     </nav>
@@ -46,6 +40,8 @@
         if ($_SESSION['perfil'] != "Gestor") {
             header("Location: login.php");
         }
+    } else {
+        header("Location: login.php");
     }
 
     require_once("databaseManager.inc.php");

@@ -46,9 +46,7 @@
       if ($_SESSION['perfil'] != "Gestor") {
           header("Location: login.php");
       }
-    } else {
-      header("Location: login.php");
-    }  
+    }
 
         $mensajeError = "";
 
